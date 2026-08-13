@@ -268,11 +268,19 @@ Reverse-engineering JieLi microcontrollers (AC791N / WL82 / AC69x series) requir
 
 Useful open-source tools, documentation, and SDK repositories:
 
-1. **[ghidra-jieli Repository](https://github.com/kagaimiq/ghidra-jieli):**
+1. **[AL-255/FM-1-RE Repository](https://github.com/AL-255/FM-1-RE):**
+   Reverse-engineering repository for M-VAVE FM-1 firmware. It reveals that the stock FM-1 firmware itself utilizes a Dexed/msfa-derived 6-operator FM synthesis engine, and contains V13/V14 disassembly function maps, XIP flash offset analyses, as well as an experimental custom firmware build.
+2. **[ghidra-jieli Repository](https://github.com/kagaimiq/ghidra-jieli):**
    Ghidra processor extension for disassembling and decompiling JieLi `pi32`, `pi32v2`, and `q32s` CPU binaries.
-2. **[jl-uboot-tool Repository](https://github.com/kagaimiq/jl-uboot-tool):**
+3. **[jl-uboot-tool Repository](https://github.com/kagaimiq/jl-uboot-tool):**
    Utility for interacting with JieLi UBOOT bootloaders over USB Mass Storage / SCSI pass-through.
-3. **[JieLi AC79 Official Peripheral Documentation](https://doc.zh-jieli.com/AC79/zh-cn/release_v1.0.3/module_example/peripherals/sd.html):**
+4. **[jl-misctools Repository](https://github.com/kagaimiq/jl-misctools):**
+   Utilities for inspecting and converting JieLi firmware containers, key files, and UI resources.
+5. **[JieLi USB Boot Key Activation (jielie docs)](https://kagaimiq.github.io/jielie/isp/usb/usb-key.html):**
+   Documentation on triggering JieLi hardware USB boot loader mode via D+/D- signal patterns and ISP keys.
+6. **[JieLi SoC Forum Thread (esp8266.ru)](https://esp8266.ru/forum/threads/jl-soc.5500/):**
+   Community research thread discussing JieLi SoCs, SDKs, toolchains, flash recovery, and hardware boot modes.
+7. **[JieLi AC79 Official Peripheral Documentation](https://doc.zh-jieli.com/AC79/zh-cn/release_v1.0.3/module_example/peripherals/sd.html):**
    Official documentation covering AC79xx series peripheral hardware modules (SD controller, GPIO, UART, SPI, I2S).
-4. **[JieLi AC79 AIoT SDK (Gitee Repository)](https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK):**
+8. **[JieLi AC79 AIoT SDK (Gitee Repository)](https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK):**
    Official C SDK codebase for AC79 series (WL82 / AC791N) microcontrollers, containing board support packages (BSP), linker scripts, and hardware register headers.
