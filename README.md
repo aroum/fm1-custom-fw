@@ -35,6 +35,10 @@ To open the physical enclosure of the M-VAVE FM1:
    * **Rubber Feet:** The rubber feet do **NOT** need to be unglued or peeled off (no screws are hidden under the rubber pads).
 2. **Separate Housing Latches:** After removing all 6 screws, carefully unclip the internal **plastic retaining latches/snaps** running along the bottom enclosure seam to separate the case halves.
 
+* **Teardown & Internal PCB Photos:**
+  * High-resolution disassembly photos of the PCB and internal components are available locally in the [photos/](photos/) directory.
+  * Teardown photo discussion and community analysis can also be viewed on [Reddit r/synthdiy](https://www.reddit.com/r/synthdiy/comments/1vgotwe/comment/p3gk1ko/).
+
 ---
 
 ## 2. Core Technical Findings
