@@ -9,6 +9,18 @@ This document contains technical research, hardware details, and reverse-enginee
 ### 1.1. Target Device & Processor
 * **Target Device:** **M-VAVE FM1** (FM Synthesizer / MIDI Controller).
 * **Processor SoC:** **JieLi AC791N** (WL82 series, 32-bit RISC core).
+* **Official Development Board:** **JL_AC79_DevKit V1.0** (AC791N evaluation kit).
+  * [JL_AC79_DevKit V1.0 Official Documentation](https://doc.zh-jieli.com/AC79/zh-cn/release_v1.0.3/board_description/board_overview/index.html)
+  * Note: In retail/marketplace listings, this devboard has been found available for purchase primarily on **Taobao**.
+  
+  ![JL_AC79_DevKit V1.0](photos/devboard.webp)
+
+* **Synthesizer Product Page:** [Cuvave / M-VAVE FM-1 Product Page](http://www.cuvave.com/product?id=fm-1)
+* **Latest Available Synthesizer Firmware:** [FM-1.fwsc (v15 2026-07-30)](https://yms-file-store.oss-cn-hongkong.aliyuncs.com/software/firmware/FM-1.fwsc)
+* **Firmware v15 Entropy Analysis:** ([Source Issue #1](https://github.com/aroum/fm1-custom-fw/issues/1))
+  
+  ![Firmware v15 Entropy Analysis](photos/firmware_entropy.png)
+
 * **M-VAVE Ecosystem:** Many other M-VAVE audio products (MIDI foot controllers, audio interfaces, and digital pedals) use the same JieLi AC791N / AC69xx processor platform and share similar OTA firmware architectures.
 
 ### 1.2. Hardware PCB Characteristics
