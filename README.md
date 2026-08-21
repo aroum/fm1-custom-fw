@@ -286,3 +286,7 @@ Useful open-source tools, documentation, and SDK repositories:
    Official C SDK codebase for AC79 series (WL82 / AC791N) microcontrollers, containing board support packages (BSP), linker scripts, and hardware register headers.
 9. **[M-VAVE SMK-37 PRO Reverse Engineering Gist (by probonopd)](https://gist.github.com/probonopd/18b3ed65a69d0229eb630c47d7e316dc):**
    Research notes on unpacking `.fwsc` firmware files for the M-VAVE SMK-37 PRO (DX7 FM MIDI keyboard) and identifying the underlying JieLi AC791N platform structure using `jl-misctools`.
+10. **[FM-1 Online Editor](https://fm1-editor.com/):**
+    Web-based configuration and patch editor for the M-VAVE FM1 synthesizer.
+11. **[OpenPatch.es (Yamaha DX7 Patch Utility)](https://openpatch.es/):**
+    Web utility for DX7 FM patches allowing WAV upload to recover/match patches, live auditioning, sequencing, modifying, mutating, and exporting patch sets as `.syx` files.
