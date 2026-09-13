@@ -23,10 +23,12 @@ This document contains technical research, hardware details, and reverse-enginee
 
 * **M-VAVE Ecosystem:** Many other M-VAVE audio products (MIDI foot controllers, audio interfaces, and digital pedals) use the same JieLi AC791N / AC69xx processor platform and share similar OTA firmware architectures.
 
-### 1.2. Hardware PCB Characteristics
+### 1.2. Hardware PCB Characteristics & Recovery Vector
 * **No Debug Ports / Jumpers:** The M-VAVE FM1 PCB contains **no exposed debug headers** (JTAG, SWD, or UART debug pads).
 * **No Recovery Buttons:** There are **no hidden jumper pins or physical recovery buttons** on the board for forcing bootloader / DFU mode.
-* **Firmware Update Vector:** MIDI SysEx over USB is the **only** practical firmware update channel available on the device.
+* **Firmware Update Vectors:**
+  * **Standard User-Mode Flashing:** MIDI SysEx over USB is the official, application-level firmware update channel available on the device.
+  * **Unbrick & Hardware Recovery (JieLi Mask-ROM / UBOOT mode):** The JieLi AC791N SoC boot ROM can be forced into its mask-ROM USB download mode (`UBOOT1.00`) through the external USB-C port using a dedicated **RP2040-based hardware dongle** (or vendor JieLi USB Updater). This dongle bit-bangs the hardware boot key (`0x16EF` at ~50 kHz) over USB D+/D- lines at power-up, allowing SPI flash recovery and unbricking without opening the enclosure (see [ip2k/mvave-fm1-open-firmware](https://github.com/ip2k/mvave-fm1-open-firmware)).
 
 ### 1.3. Device Disassembly & Case Opening Instructions
 To open the physical enclosure of the M-VAVE FM1:
@@ -290,3 +292,5 @@ Useful open-source tools, documentation, and SDK repositories:
     Web-based configuration and patch editor for the M-VAVE FM1 synthesizer.
 11. **[OpenPatch.es (Yamaha DX7 Patch Utility)](https://openpatch.es/):**
     Web utility for DX7 FM patches allowing WAV upload to recover/match patches, live auditioning, sequencing, modifying, mutating, and exporting patch sets as `.syx` files.
+12. **[ip2k/mvave-fm1-open-firmware Repository](https://github.com/ip2k/mvave-fm1-open-firmware):**
+    Research project towards an open-source firmware for the M-VAVE FM-1. Includes specification, reference implementation, and simulation testbench for an **RP2040-based `USB_KEY` hardware recovery dongle** (`dongle/` directory) that forces the JieLi AC791N SoC into mask-ROM USB download mode (`UBOOT1.00`) via the external USB-C port, enabling low-level flash backup and unbricking.
