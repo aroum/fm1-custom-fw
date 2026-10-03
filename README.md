@@ -294,3 +294,9 @@ Useful open-source tools, documentation, and SDK repositories:
     Web utility for DX7 FM patches allowing WAV upload to recover/match patches, live auditioning, sequencing, modifying, mutating, and exporting patch sets as `.syx` files.
 12. **[ip2k/mvave-fm1-open-firmware Repository](https://github.com/ip2k/mvave-fm1-open-firmware):**
     Research project towards an open-source firmware for the M-VAVE FM-1. Includes specification, reference implementation, and simulation testbench for an **RP2040-based `USB_KEY` hardware recovery dongle** (`dongle/` directory) that forces the JieLi AC791N SoC into mask-ROM USB download mode (`UBOOT1.00`) via the external USB-C port, enabling low-level flash backup and unbricking.
+13. **[baud girl (M-VAVE FM1 Custom Firmware Mod)](https://baudgirl.com/):**
+    The first comprehensive third-party firmware modification for the FM1 (closed-source). Features a complete redesign of stock UX/controls, Virtual Analog (VA) synth engines, a 64-step sequencer, and direct web-based browser installation in a few clicks.
+14. **[ip2k/lunar-modulator Repository](https://github.com/ip2k/lunar-modulator):**
+    *Lunar Modulator — Intergalactic Modulation Station*: Open-source alternative firmware project for the M-VAVE FM-1 (JieLi AC791N). Features Mutable Instruments-derived synth engines, a Movy-style sequencer, and an in-browser virtual FM-1 simulator (currently in research/bench stage).
+
+
