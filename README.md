@@ -266,37 +266,56 @@ Reverse-engineering JieLi microcontrollers (AC791N / WL82 / AC69x series) requir
 
 ---
 
-## 11. External References & Resources
+## 11. Custom & Alternative Firmwares
+
+Community-developed custom firmwares, mods, and experimental firmware projects for the M-VAVE FM-1:
+
+1. **[Felucca by hugelton](https://github.com/hugelton/Felucca) ([Web Installer](https://hugelton.github.io/Felucca/) | [Web Editor](https://hugelton.github.io/Felucca/webapp/editor/)):**
+   * **License:** Open Source (GPL-3.0-only).
+   * **Synthesizer Engines:** 9 distinct sound engines including **ANALOG** (virtual analog, 2 osc, PWM, resonant LPF), **DIGITAL** (4-op FM, 8 algorithms, feedback), **PHASE** (phase distortion), **LOFI** (chiptune, 4-bit wave RAM), **SAMPLE** (multisampled instruments + user slots), **VOICE** (formant/vocal osc), **TRIO** (3 osc with ring mod/sync), **WHEEL** (tonewheel organ with drawbars & rotary speaker), and **GRAIN** (granular textures).
+   * **Architecture & Features:** 4 tracks (3 synth parts + 1 GM drum track, 8 shared voices), 64-step sequencer per track with chords/ties/slides and live loop recording, per-track SLICER (16-step tempo-synced gate/stutter), effects (distortion, chorus, delay, reverb sends, master limiter), scales & white-key quantization, and web editor.
+   * **Installation:** Direct web installer via WebMIDI in Chrome/Edge over standard USB-C cable (no extra hardware needed; stock updater restores official firmware).
+
+2. **[baud girl Custom Firmware Mod](https://baudgirl.com/):**
+   * **License:** Closed Source.
+   * **Features:** Comprehensive overhaul and reimagining of the stock firmware ergonomics and controls. Adds Virtual Analog (VA) synthesizer engines and a 64-step sequencer.
+   * **Installation:** Web-based browser installer in a couple of clicks via WebMIDI.
+
+3. **[Lunar Modulator by ip2k](https://github.com/ip2k/lunar-modulator):**
+   * **License:** Open Source.
+   * **Status:** Research / bench stage.
+   * **Features:** *Intergalactic Modulation Station* — alternative firmware based on Mutable Instruments synthesizer engines, a Movy-style sequencer, and an in-browser virtual FM-1 emulator/simulator.
+
+---
+
+## 12. External References & Resources
 
 Useful open-source tools, documentation, and SDK repositories:
 
 1. **[AL-255/FM-1-RE Repository](https://github.com/AL-255/FM-1-RE):**
    Reverse-engineering repository for M-VAVE FM-1 firmware. It reveals that the stock FM-1 firmware itself utilizes a Dexed/msfa-derived 6-operator FM synthesis engine, and contains V13/V14 disassembly function maps, XIP flash offset analyses, as well as an experimental custom firmware build.
-2. **[ghidra-jieli Repository](https://github.com/kagaimiq/ghidra-jieli):**
+2. **[ip2k/mvave-fm1-open-firmware Repository](https://github.com/ip2k/mvave-fm1-open-firmware):**
+   Research project towards an open-source firmware for the M-VAVE FM-1. Includes specification, reference implementation, and simulation testbench for an **RP2040-based `USB_KEY` hardware recovery dongle** (`dongle/` directory) that forces the JieLi AC791N SoC into mask-ROM USB download mode (`UBOOT1.00`) via the external USB-C port, enabling low-level flash backup and unbricking.
+3. **[ghidra-jieli Repository](https://github.com/kagaimiq/ghidra-jieli):**
    Ghidra processor extension for disassembling and decompiling JieLi `pi32`, `pi32v2`, and `q32s` CPU binaries.
-3. **[jl-uboot-tool Repository](https://github.com/kagaimiq/jl-uboot-tool):**
+4. **[jl-uboot-tool Repository](https://github.com/kagaimiq/jl-uboot-tool):**
    Utility for interacting with JieLi UBOOT bootloaders over USB Mass Storage / SCSI pass-through.
-4. **[jl-misctools Repository](https://github.com/kagaimiq/jl-misctools):**
+5. **[jl-misctools Repository](https://github.com/kagaimiq/jl-misctools):**
    Utilities for inspecting and converting JieLi firmware containers, key files, and UI resources.
-5. **[JieLi USB Boot Key Activation (jielie docs)](https://kagaimiq.github.io/jielie/isp/usb/usb-key.html):**
+6. **[JieLi USB Boot Key Activation (jielie docs)](https://kagaimiq.github.io/jielie/isp/usb/usb-key.html):**
    Documentation on triggering JieLi hardware USB boot loader mode via D+/D- signal patterns and ISP keys.
-6. **[JieLi SoC Forum Thread (esp8266.ru)](https://esp8266.ru/forum/threads/jl-soc.5500/):**
+7. **[JieLi SoC Forum Thread (esp8266.ru)](https://esp8266.ru/forum/threads/jl-soc.5500/):**
    Community research thread discussing JieLi SoCs, SDKs, toolchains, flash recovery, and hardware boot modes.
-7. **[JieLi AC79 Official Peripheral Documentation](https://doc.zh-jieli.com/AC79/zh-cn/release_v1.0.3/module_example/peripherals/sd.html):**
+8. **[JieLi AC79 Official Peripheral Documentation](https://doc.zh-jieli.com/AC79/zh-cn/release_v1.0.3/module_example/peripherals/sd.html):**
    Official documentation covering AC79xx series peripheral hardware modules (SD controller, GPIO, UART, SPI, I2S).
-8. **[JieLi AC79 AIoT SDK (Gitee Repository)](https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK):**
+9. **[JieLi AC79 AIoT SDK (Gitee Repository)](https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK):**
    Official C SDK codebase for AC79 series (WL82 / AC791N) microcontrollers, containing board support packages (BSP), linker scripts, and hardware register headers.
-9. **[M-VAVE SMK-37 PRO Reverse Engineering Gist (by probonopd)](https://gist.github.com/probonopd/18b3ed65a69d0229eb630c47d7e316dc):**
-   Research notes on unpacking `.fwsc` firmware files for the M-VAVE SMK-37 PRO (DX7 FM MIDI keyboard) and identifying the underlying JieLi AC791N platform structure using `jl-misctools`.
-10. **[FM-1 Online Editor](https://fm1-editor.com/):**
+10. **[M-VAVE SMK-37 PRO Reverse Engineering Gist (by probonopd)](https://gist.github.com/probonopd/18b3ed65a69d0229eb630c47d7e316dc):**
+    Research notes on unpacking `.fwsc` firmware files for the M-VAVE SMK-37 PRO (DX7 FM MIDI keyboard) and identifying the underlying JieLi AC791N platform structure using `jl-misctools`.
+11. **[FM-1 Online Editor](https://fm1-editor.com/):**
     Web-based configuration and patch editor for the M-VAVE FM1 synthesizer.
-11. **[OpenPatch.es (Yamaha DX7 Patch Utility)](https://openpatch.es/):**
+12. **[OpenPatch.es (Yamaha DX7 Patch Utility)](https://openpatch.es/):**
     Web utility for DX7 FM patches allowing WAV upload to recover/match patches, live auditioning, sequencing, modifying, mutating, and exporting patch sets as `.syx` files.
-12. **[ip2k/mvave-fm1-open-firmware Repository](https://github.com/ip2k/mvave-fm1-open-firmware):**
-    Research project towards an open-source firmware for the M-VAVE FM-1. Includes specification, reference implementation, and simulation testbench for an **RP2040-based `USB_KEY` hardware recovery dongle** (`dongle/` directory) that forces the JieLi AC791N SoC into mask-ROM USB download mode (`UBOOT1.00`) via the external USB-C port, enabling low-level flash backup and unbricking.
-13. **[baud girl (M-VAVE FM1 Custom Firmware Mod)](https://baudgirl.com/):**
-    The first comprehensive third-party firmware modification for the FM1 (closed-source). Features a complete redesign of stock UX/controls, Virtual Analog (VA) synth engines, a 64-step sequencer, and direct web-based browser installation in a few clicks.
-14. **[ip2k/lunar-modulator Repository](https://github.com/ip2k/lunar-modulator):**
-    *Lunar Modulator — Intergalactic Modulation Station*: Open-source alternative firmware project for the M-VAVE FM-1 (JieLi AC791N). Features Mutable Instruments-derived synth engines, a Movy-style sequencer, and an in-browser virtual FM-1 simulator (currently in research/bench stage).
+
 
 
