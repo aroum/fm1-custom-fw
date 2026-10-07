@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """
-FM-1 Synthesizer OTA Firmware Flasher & Preset Uploader
-Alternative Python utility for flashing FM-1 synthesizers over MIDI SysEx.
+FM-1 Synthesizer OTA Firmware Flasher & Extraction Utility
+Reverse-engineering research tool for FM-1 synthesizers.
+
+NOTE ON FLASHING:
+    The direct flash streaming implementation in this script is experimental/non-functional
+    due to wire-framing differences (device-pull vs host-push). For proven, hardware-verified
+    firmware flashing on physical hardware, use AL-255's `tools/fm1_ota.py` from AL-255/FM-1-RE.
+    Firmware extraction (--extract) is fully functional and carves byte-exact .fwsc packages.
 
 Usage:
     python3 fm1_flasher.py --list                 # List available MIDI ports
-    python3 fm1_flasher.py                        # Flash using embedded firmware from app binary
-    python3 fm1_flasher.py --file my_firmware.ufw # Flash using custom firmware file
-    python3 fm1_flasher.py --preset bank.syx      # Upload preset bank
+    python3 fm1_flasher.py --extract out.fwsc     # Extract embedded .fwsc firmware package
+    python3 fm1_flasher.py --file my_firmware.ufw # Experimental flash (at own risk)
 """
 
 import sys
@@ -51,21 +56,37 @@ def calculate_checksum(data: bytes) -> int:
 
 
 def extract_embedded_firmware(app_binary_path: str) -> bytes:
-    """Extracts the embedded @JMUA firmware image from the native app binary."""
+    """
+    Extracts the embedded .fwsc firmware package from the native M-UPGRADE-FM1 binary.
+    The package is stored as a Qt resource ending at JLUFW + 16, preceded by a
+    4-byte big-endian length prefix, with 'AC791N' identifier near offset 0x424.
+    """
+    import struct
     if not os.path.exists(app_binary_path):
         raise FileNotFoundError(f"App binary not found: {app_binary_path}")
 
     with open(app_binary_path, 'rb') as f:
         binary_data = f.read()
 
-    idx = binary_data.find(b'@JMUA')
-    if idx == -1:
-        raise ValueError("@JMUA signature not found in binary executable!")
+    idx = 0
+    while True:
+        idx = binary_data.find(b'JLUFW', idx)
+        if idx == -1:
+            break
+        end_pos = idx + 16
+        # Scan backward for Qt 4-byte big-endian length word matching end_pos
+        for p in range(end_pos - 1000000, end_pos - 100000, 4):
+            if p >= 4:
+                length = struct.unpack('>I', binary_data[p-4:p])[0]
+                if p + length == end_pos:
+                    if b'AC791N' in binary_data[p:p + 0x1000]:
+                        fw_data = binary_data[p:end_pos]
+                        print(f"[+] Successfully carved embedded firmware package:")
+                        print(f"    Offset range: 0x{p:X} - 0x{end_pos:X} (size: {len(fw_data)} bytes)")
+                        return fw_data
+        idx += 5
 
-    # Read firmware container (~140 KB)
-    fw_data = binary_data[idx:idx + 150000]
-    print(f"[+] Extracted embedded @JMUA firmware (offset 0x{idx:X}, size: {len(fw_data)} bytes)")
-    return fw_data
+    raise ValueError("Valid firmware package (.fwsc) not found in binary executable!")
 
 
 def find_fm1_ports():
@@ -192,13 +213,26 @@ class FM1Flasher:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="FM-1 MIDI SysEx Firmware Flasher & Preset Utility")
+    parser = argparse.ArgumentParser(description="FM-1 MIDI SysEx Firmware Flasher & Extraction Utility")
     parser.add_argument("--list", action="store_true", help="List available MIDI ports")
-    parser.add_argument("--file", type=str, help="Path to custom firmware file (.ufw / .bin)")
+    parser.add_argument("--extract", type=str, help="Extract embedded .fwsc firmware from app binary to output file")
+    parser.add_argument("--app", type=str, default=DEFAULT_APP_PATH, help="Path to M-UPGRADE-FM1 macOS executable (for extraction)")
+    parser.add_argument("--file", type=str, help="Path to custom firmware file (.fwsc / .ufw)")
     parser.add_argument("--preset", type=str, help="Path to preset bank file (.syx / .bin)")
     parser.add_argument("--in-port", type=str, help="MIDI In port name")
     parser.add_argument("--out-port", type=str, help="MIDI Out port name")
     args = parser.parse_args()
+
+    if args.extract:
+        try:
+            fw = extract_embedded_firmware(args.app)
+            with open(args.extract, 'wb') as f:
+                f.write(fw)
+            print(f"[+] Saved extracted firmware to {args.extract} ({len(fw)} bytes)")
+        except Exception as e:
+            print(f"[!] Extraction failed: {e}")
+            sys.exit(1)
+        return
 
     if args.list:
         print("=== AVAILABLE MIDI INPUTS ===")
