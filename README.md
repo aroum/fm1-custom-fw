@@ -298,6 +298,28 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
    * **Features:** 4 tracks (3 synth tracks + 1 drum machine with 16 sounds across the white keys), 9 synthesis engines, 68 sounds, 37 drum kits, custom sample support, and live-playable song mode. Features USB stereo audio input (class-compliant recording directly into DAWs without drivers), 3.5 mm TRS MIDI IN keyboard input, MIDI clock in/sync, button and note LED illumination modes for dark environments, sample chopping/fitting, and a web editor with full backup/restore.
    * **Installation:** Browser-based installer via WebMIDI in Chrome/Edge, with easy rollback to M-VAVE stock V15.
 
+6. **[FoMni-1 by charlesvestal](https://github.com/charlesvestal/fm1-fomni) ([Web Installer](https://charlesvestal.github.io/fm1-fomni/)):**
+   * **License:** Open Source (GPL-3.0).
+   * **Concept:** Suzuki Omnichord-inspired chord harp firmware for the FM-1.
+   * **Features:** Strum chords across the white keys like a harp strumplate, select chord roots and types on the black keys, integrated rhythmic accompaniment and arpeggiator modes.
+   * **Installation:** Browser WebMIDI installer via USB.
+
+7. **[ChoralRoot FM-1 by Quixotic7](https://github.com/Quixotic7/ChoralRootFM1) ([Web Installer](https://quixotic7.github.io/ChoralRootFM1/) | [Web Emulator](https://quixotic7.github.io/ChoralRootFM1/emu/)):**
+   * **License:** Open Source (GPL-3.0). Based on Felucca (engines/platform) and ChoralRoot (Monome grid chord engine).
+   * **Concept:** Telepathic Orchid / Monome-style chord performance instrument.
+   * **Features:** Two-handed chord shaping (one hand selects roots, the other shapes voicings), custom key modes, performance bass line, built-in looper, full color UI, and browser sound emulator.
+   * **Installation:** Browser WebMIDI installer via USB.
+
+8. **[Melodee by keremimo](https://github.com/keremimo/melodee) ([Web Installer](https://keremimo.github.io/melodee/) | [Web Editor](https://keremimo.github.io/melodee/webapp/editor/)):**
+   * **License:** Open Source (GPL-3.0-only). Modified build based on Felucca.
+   * **Features:** Adds a native **Casio CZ-1** phase-distortion engine with 64 original CZ-1 factory preset tones, 8 device CZ banks with `.syx` import/export, 38 dedicated editing pages, full backup/restore before flashing, and WebMIDI management.
+   * **Installation:** Browser WebMIDI installer with built-in backup before installation.
+
+9. **[FM1 Quest by hericdk](https://github.com/hericdk/fm1-quest) ([Web Installer](https://hericdk.github.io/fm1-quest/webapp/installer/)):**
+   * **License:** Open Source (GPL-3.0-only). Built upon the SLOOP groovebox core.
+   * **Concept:** Fantasy RPG sidescroller interface for the groovebox: tracks are represented as party heroes, sequence steps are attacks, BPM drives party walk speed, scales dictate biomes, and recording loops triggers boss fights.
+   * **Installation:** Browser WebMIDI installer via USB.
+
 > [!TIP]
 > **Community Flashing Experience & Safe Upgrade Practice:**  
 > While not an absolute hard rule, there is a prominent community recommendation to avoid flashing one custom firmware directly over another. To minimize bricking risks, some users suggest rolling back to the official stock firmware (v15) via M-VAVE's official updater first, and only then flashing the next custom firmware build.
@@ -332,6 +354,11 @@ Useful open-source tools, documentation, and SDK repositories:
     Web-based configuration and patch editor for the M-VAVE FM1 synthesizer.
 12. **[OpenPatch.es (Yamaha DX7 Patch Utility)](https://openpatch.es/):**
     Web utility for DX7 FM patches allowing WAV upload to recover/match patches, live auditioning, sequencing, modifying, mutating, and exporting patch sets as `.syx` files.
+13. **[FM-1 Pulses by mene311](https://github.com/mene311/fm1-pulses) ([Web App](https://mene311.github.io/fm1-pulses/)):**
+    Browser-based generative MIDI sequencer and pattern generator for the M-VAVE FM-1 (Web MIDI API / PWA, runs on desktop/mobile). Generates reproducible 64-step banks with parameter drift and can freeze them directly into the hardware pattern slots over SysEx (supported on Baud Girl / FM-1+VA firmware), or broadcast live MIDI notes in real time.
+14. **[SLOOP FM-1 Simulator by Chance Roth](https://github.com/chancethemaker/sloop-fm1-sim) ([Web Simulator](https://chancethemaker.github.io/sloop-fm1-sim)):**
+    Self-contained in-browser interactive simulator of the SLOOP / Felucca firmware for the FM-1, allowing testing controls, sound engines, and workflow directly in the browser without physical hardware.
+
 
 
 
