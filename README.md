@@ -53,10 +53,41 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
    * **Features:** Adds a native **Casio CZ-1** phase-distortion engine with 64 original CZ-1 factory preset tones, 8 device CZ banks with `.syx` import/export, 38 dedicated editing pages, full backup/restore before flashing, and WebMIDI management.
    * **Installation:** Browser WebMIDI installer with built-in backup before installation.
 
-9. **[FM1 Quest by hericdk](https://github.com/hericdk/fm1-quest) ([Web Installer](https://hericdk.github.io/fm1-quest/webapp/installer/)):**
+9. **[FM1 Quest by hericdk](https://github.com/hericdk/fm1-quest) ([Web Installer](https://hericdk.github.io/fm1-quest/webapp/installer/) | [Web Emulator](https://hericdk.github.io/fm1-quest/emulator/)):**
    * **License:** Open Source (GPL-3.0-only). Built upon the SLOOP groovebox core.
    * **Concept:** Fantasy RPG sidescroller interface for the groovebox: tracks are represented as party heroes, sequence steps are attacks, BPM drives party walk speed, scales dictate biomes, and recording loops triggers boss fights.
    * **Installation:** Browser WebMIDI installer via USB.
+
+10. **[GHOULBOX by Jason Persinger](https://github.com/jasonpersinger/ghoulbox-fm1-dungeon-synth) ([Web Installer](https://jasonpersinger.github.io/ghoulbox-fm1-dungeon-synth/)):**
+    * **License:** Open Source. Based on Felucca.
+    * **Concept:** Dungeon synth, dark ambient, and fantasy music groovebox firmware.
+    * **Features:** Cathedral-sized HALL reverb, worn-cassette TAPE effect, dedicated hurdy-gurdy engine with tunable drones and buzzing trompette, and 36 dungeon sounds (crypt pads, monk choirs, lutes, organs) with an old-school RPG UI and skull boot screen.
+    * **Installation:** Browser WebMIDI installer via USB with full backup feature before flashing.
+
+11. **[Jangada by zednaked](https://github.com/zednaked/jangada) ([Web Installer](https://zednaked.github.io/jangada/) | [Web Studio](https://zednaked.github.io/jangada/webapp/studio/)):**
+    * **License:** Open Source. Based on Felucca.
+    * **Concept:** Dark, industrial, Brazilian-accented groovebox firmware.
+    * **Features:** 10 sound engines (including 6-op FM and superwave analog), 4 tracks, modulation matrix, ratchets, drone holding/evolving modes, and dedicated custom drum kits.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+12. **[sloopDX by zvenson](https://github.com/zvenson/dxsloop) ([Web Installer](https://dx7.designburgapps.com/) | [Web Editor](https://dx7.designburgapps.com/webapp/editor/)):**
+    * **License:** Open Source. Fork of SLOOP.
+    * **Concept:** SLOOP's live groovebox workflow coupled directly with an authentic Yamaha DX7 engine.
+    * **Features:** Replaces engines with a 6-operator DX7 engine ported from Dexed, full on-device parameter editing, room for 256 voices from custom banks, custom FM drum programming, and sequences up to 128 steps.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+13. **[X0X by Charles Vestal](https://github.com/charlesvestal/fm1-x0x) ([Web Installer](https://charlesvestal.github.io/fm1-x0x/install/) | [Web Emulator](https://charlesvestal.github.io/fm1-x0x/emu/) | [Manual](https://charlesvestal.github.io/fm1-x0x/manual/)):**
+    * **License:** Open Source. Based on Felucca.
+    * **Concept:** Propellerhead ReBirth-inspired techno/acid groovebox machine.
+    * **Features:** TR-909, TR-808, two TB-303 synths with an integrated acid line generator, and a breakbeat player all playing simultaneously; includes automation, shared reverb and tape delay sends, and a master compressor.
+    * **Installation:** Browser WebMIDI installer via USB (with stock restore option).
+
+14. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
+    * **License:** Open Source.
+    * **Status:** Experimental / Source only (reference proof-of-concept).
+    * **Concept:** Nintendo Entertainment System (NES) emulator running on the FM-1 hardware.
+    * **Features:** Uses the FM-1's 27 keys as the game controller and its color screen as the television display. Developed as a worked example and educational kit for writing bare-metal FM-1 firmware from scratch.
+    * **Installation:** Compile from source (no web installer or prebuilt release; does not produce audio/music).
 
 > [!TIP]
 > **Community Flashing Experience & Safe Upgrade Practice:**  
@@ -316,8 +347,8 @@ Useful open-source tools, documentation, and SDK repositories:
    Official C SDK codebase for AC79 series (WL82 / AC791N) microcontrollers, containing board support packages (BSP), linker scripts, and hardware register headers.
 10. **[M-VAVE SMK-37 PRO Reverse Engineering Gist (by probonopd)](https://gist.github.com/probonopd/18b3ed65a69d0229eb630c47d7e316dc):**
     Research notes on unpacking `.fwsc` firmware files for the M-VAVE SMK-37 PRO (DX7 FM MIDI keyboard) and identifying the underlying JieLi AC791N platform structure using `jl-misctools`.
-11. **[FM-1 Online Editor](https://fm1-editor.com/):**
-    Web-based configuration and patch editor for the M-VAVE FM1 synthesizer.
+11. **[FM-1 Online Editor & Firmware Directory](https://fm1-editor.com/) ([Firmware Catalog](https://fm1-editor.com/firmware/)):**
+    Web-based configuration and patch editor / librarian for the M-VAVE FM1 synthesizer, along with a curated directory and status tracker for community firmwares.
 12. **[OpenPatch.es (Yamaha DX7 Patch Utility)](https://openpatch.es/):**
     Web utility for DX7 FM patches allowing WAV upload to recover/match patches, live auditioning, sequencing, modifying, mutating, and exporting patch sets as `.syx` files.
 13. **[FM-1 Pulses by mene311](https://github.com/mene311/fm1-pulses) ([Web App](https://mene311.github.io/fm1-pulses/)):**
