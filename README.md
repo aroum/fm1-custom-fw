@@ -282,9 +282,25 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
    * **Installation:** Web-based browser installer in a couple of clicks via WebMIDI.
 
 3. **[Lunar Modulator by ip2k](https://github.com/ip2k/lunar-modulator):**
-   * **License:** Open Source.
+   * **License:** Open Source (MIT).
    * **Status:** Research / bench stage.
    * **Features:** *Intergalactic Modulation Station* — alternative firmware based on Mutable Instruments synthesizer engines, a Movy-style sequencer, and an in-browser virtual FM-1 emulator/simulator.
+
+4. **[Groove OS](https://www.groove-os.com/) ([Web Emulator](https://www.groove-os.com/emu)):**
+   * **License:** Commercial / Proprietary ($29).
+   * **Concept:** Transforms the FM-1 into a standalone multitrack groovebox without needing any external equipment.
+   * **Features:** Up to 8 independent tracks (drums, bass, chords, leads) with independent loop lengths (1 to 8 bars) for evolving polyrhythmic structures, dual sound engine (native 6-op FM + Virtual Analog with ladder filter), up to 20 voices of polyphony (12 FM + 8 VA, max 6 for drums), 64-step sequencer with parameter locks (p-locks), live stage view, curated sound packs, and DX7 SysEx patch reception.
+   * **Installation:** Browser-based USB installer via WebMIDI in Chrome/Edge (~2 minutes).
+
+5. **[SLOOP by isod89](https://github.com/isod89/sloop-fm1) ([Web Installer](https://isod89.github.io/sloop-fm1/) | [Web Editor](https://isod89.github.io/sloop-fm1/webapp/editor/)):**
+   * **License:** Open Source (GPL-3.0). Based on Felucca by Hügelton Instruments.
+   * **Concept:** Live performance groovebox firmware designed for any music style without mandatory presets or fixed patterns.
+   * **Features:** 4 tracks (3 synth tracks + 1 drum machine with 16 sounds across the white keys), 9 synthesis engines, 68 sounds, 37 drum kits, custom sample support, and live-playable song mode. Features USB stereo audio input (class-compliant recording directly into DAWs without drivers), 3.5 mm TRS MIDI IN keyboard input, MIDI clock in/sync, button and note LED illumination modes for dark environments, sample chopping/fitting, and a web editor with full backup/restore.
+   * **Installation:** Browser-based installer via WebMIDI in Chrome/Edge, with easy rollback to M-VAVE stock V15.
+
+> [!TIP]
+> **Community Flashing Experience & Safe Upgrade Practice:**  
+> While not an absolute hard rule, there is a prominent community recommendation to avoid flashing one custom firmware directly over another. To minimize bricking risks, some users suggest rolling back to the official stock firmware (v15) via M-VAVE's official updater first, and only then flashing the next custom firmware build.
 
 ---
 
