@@ -6,7 +6,9 @@ This document contains technical research, hardware details, and reverse-enginee
 
 ## 1. Custom & Alternative Firmwares
 
-Community-developed custom firmwares, mods, and experimental firmware projects for the M-VAVE FM-1:
+Community-developed custom firmwares, mods, and experimental firmware projects for the M-VAVE FM-1, organized by category:
+
+### 1.1. Sound, Synthesizer & Groovebox Firmwares
 
 1. **[Felucca by hugelton](https://github.com/hugelton/Felucca) ([Web Installer](https://hugelton.github.io/Felucca/) | [Web Editor](https://hugelton.github.io/Felucca/webapp/editor/)):**
    * **License:** Open Source (GPL-3.0-only).
@@ -50,7 +52,11 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
 
 8. **[Melodee by keremimo](https://github.com/keremimo/melodee) ([Web Installer](https://keremimo.github.io/melodee/) | [Web Editor](https://keremimo.github.io/melodee/webapp/editor/)):**
    * **License:** Open Source (GPL-3.0-only). Modified build based on Felucca.
-   * **Features:** Adds a native **Casio CZ-1** phase-distortion engine with 64 original CZ-1 factory preset tones, 8 device CZ banks with `.syx` import/export, 38 dedicated editing pages, full backup/restore before flashing, and WebMIDI management.
+   * **Features:**
+     * **Prophet-5 Engine (New in 0.13):** Native **Sequential Prophet-5 Rev 4** engine replacing ANALOG — two oscillators with hard sync, Poly-Mod, LFO/noise wheel modulation, selectable SSI (Rev 1/2) and Curtis (Rev 3) 4-pole low-pass filters, separate filter/amp envelopes, Vintage knob, glide, unison, and 5 voices per track. Includes **all 200 programs** of Sequential's v1.03 factory bank (128 native user slots P001–P128), 16 device parameter pages, and `.syx` program/bank import and export in the web editor.
+     * **Casio CZ-1 Phase Distortion:** Authentic CZ-1 engine with 64 original CZ-1 factory preset tones, 8 CZ device banks with `.syx` import/export, and 38 dedicated editing pages.
+     * **FM6 & Microtonal Scales:** 64 DX7/FM6 slots with direct SysEx bank dump support, 70 microtonal tunings across equal divisions, just intonation, historical temperaments, and maqam models.
+     * **Advanced Sequencing:** Single unified note editor (`SEQ > NOTES`), reversible timing quantization (`QNT`), and 1,024 recorded notes across 32 pattern banks.
    * **Installation:** Browser WebMIDI installer with built-in backup before installation.
 
 9. **[FM1 Quest by hericdk](https://github.com/hericdk/fm1-quest) ([Web Installer](https://hericdk.github.io/fm1-quest/webapp/installer/) | [Web Emulator](https://hericdk.github.io/fm1-quest/emulator/)):**
@@ -70,11 +76,18 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
     * **Features:** 10 sound engines (including 6-op FM and superwave analog), 4 tracks, modulation matrix, ratchets, drone holding/evolving modes, and dedicated custom drum kits.
     * **Installation:** Browser WebMIDI installer via USB.
 
-12. **[sloopDX by zvenson](https://github.com/zvenson/dxsloop) ([Web Installer](https://dx7.designburgapps.com/) | [Web Editor](https://dx7.designburgapps.com/webapp/editor/)):**
-    * **License:** Open Source. Fork of SLOOP.
-    * **Concept:** SLOOP's live groovebox workflow coupled directly with an authentic Yamaha DX7 engine.
-    * **Features:** Replaces engines with a 6-operator DX7 engine ported from Dexed, full on-device parameter editing, room for 256 voices from custom banks, custom FM drum programming, and sequences up to 128 steps.
-    * **Installation:** Browser WebMIDI installer via USB.
+12. **[sloopDX by zvenson](https://github.com/zvenson/dxsloop) ([Website & Web Installer](https://dx7.designburgapps.com/) | [Web Editor](https://dx7.designburgapps.com/webapp/editor/) | [Cheat Sheet PDF](https://dx7.designburgapps.com/sloopdx-cheat-sheet.pdf)):**
+    * **License:** Open Source (GPL-3.0-only). Built upon SLOOP (isod89), Felucca (Leo Kuroshita), and the `msfa` 6-operator DX7 core of Dexed (Apache-2.0).
+    * **Concept:** SLOOP's live groovebox workflow merged with an authentic Yamaha DX7 engine and a fully programmable FM drum machine.
+    * **Features:**
+      * **6-Operator FM Engine:** Complete 32-algorithm DX7 engine ported directly from Dexed's `msfa` (99% sample-identical to Dexed), featuring full envelope scaling, keyboard level/rate scaling, LFO, and feedback.
+      * **Cutoff & Resonance Filter:** Dedicated resonant low-pass filter (CUT and RESO on Knobs 1 & 2) placed behind every DX7 voice, modulatable via envelope and LFO.
+      * **On-Device Voice Editing:** Full voice programming on the FM-1 hardware with parameter lists, visual operator box diagrams, and operator solo/mute auditioning, backed by a companion web editor.
+      * **256 Sysex Voices:** 8 banks of 32 voices loaded directly from standard DX7 `.syx` bulk dumps (4104 bytes), supplemented with 20 factory modern patches (DEEP SUB, 808 SUB, REESE).
+      * **Programmable 16×8 FM Drums:** 16 distinct FM drum sounds across 5 kits (`DX KIT`, `808 FM`, `ELECTRO`, `METAL`, `MY KIT`). Each sound provides 8 on-device macro controls (TUNE, DECAY, SWEEP, BRIGHT, NOISE, LEVEL, PAN, CHOKE) plus a dedicated reverb send, parameter locks per step, kit randomization dice, and kit export/import via `.syx`.
+      * **OMNI Chord Harp Mode:** Turn any synth track into an Omnichord-like instrument (black keys trigger chords like F, C, G, Dm, Am, Em, G7, E7, D7, Bb, A7, while white keys act as 16 strum strings; bass tracks can follow chords via `FLW`).
+      * **Sequencer & Effects:** Up to 128 steps per track (256 steps shared dynamically across tracks), dedicated per-effect pages (SENDS, DIST with soft/hard/fuzz/crush, CHORUS, DELAY, REVERB), USB audio streaming, and live punch-in FX.
+    * **Installation:** Browser WebMIDI installer via USB directly from the project page.
 
 13. **[X0X by Charles Vestal](https://github.com/charlesvestal/fm1-x0x) ([Web Installer](https://charlesvestal.github.io/fm1-x0x/install/) | [Web Emulator](https://charlesvestal.github.io/fm1-x0x/emu/) | [Manual](https://charlesvestal.github.io/fm1-x0x/manual/)):**
     * **License:** Open Source. Based on Felucca.
@@ -82,12 +95,75 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
     * **Features:** TR-909, TR-808, two TB-303 synths with an integrated acid line generator, and a breakbeat player all playing simultaneously; includes automation, shared reverb and tape delay sends, and a master compressor.
     * **Installation:** Browser WebMIDI installer via USB (with stock restore option).
 
-14. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
+14. **[FiMba-1 by J. Adam Sowers (jadamsowers)](https://github.com/jadamsowers/fm1-fimba) ([Web Installer & Emulator](https://jadamsowers.github.io/fm1-fimba/)):**
+    * **License:** Open Source (GPL-3.0-only).
+    * **Concept:** Thumb piano / kalimba / mbira physical modeling synthesizer firmware for the FM-1.
+    * **Features:**
+      * **Physical Modeling Engine:** Detailed kalimba acoustic simulation running at 44.1 kHz, featuring modeled tines (material hardness, decay, tone, worn character, tuning, release), resonator bodies (box, gourd, board, buzzers, wah resonance), and built-in effects (space reverb/delay, lo-fi/tape color, chorus, filter, and granular cloud engine).
+      * **Keyboard & Key Layouts:** Traditional kalimba *Tine* layout (lowest C4 tine in the center, alternating outwards across white keys) or chromatic *Keyboard* layout. Black keys configurable for thumb-roll chord accompaniment, sharps, or performance modifiers (mute, sound hole covering, freeze, octave shift).
+      * **Built-in Sequencer/Arpeggiator:** Mbira pattern generator over chords and live playing.
+      * **WebAssembly Browser Emulator:** Complete C sound engine and UI compiled to WebAssembly running in-browser with Web MIDI and preset saving.
+    * **Installation:** Browser WebMIDI installer via USB directly from the project page.
+
+15. **[zp12 by Sven Trogus (zvenson)](https://github.com/zvenson/zp12) ([Web Installer & Homepage](https://zp12.designburgapps.com/)):**
+    * **License:** Open Source (GPL-3.0-only).
+    * **Concept:** Authentic 1980s-style 12-bit sampling drum machine firmware for the FM-1.
+    * **Features:**
+      * **Lo-Fi 12-Bit Sound Engine:** 32 pads across 4 banks running at 26.04 kHz (or 27.5 kHz). Samples are pitched via pure playback rate skipping without interpolation for authentic gritty 80s aliasing and grain.
+      * **8 Filtered Channels:** Independent channel playback where new hits cut previous ones. Channels 1–2 feature a resonant 4-pole low-pass filter closing with decay, channels 3–6 have fixed filters, and knobs act as channel faders.
+      * **Performance & Sequencing:** 11 loops triggered on black keys, 4 chained songs, real-time recording with auto-correct and 16-step grid editing, classic MPC-style swing (50–71%), and 4 punch-in FX (beat repeat/roll, reverse, tape stop).
+      * **Browser Sample Dropper:** In-browser tool to drop custom user WAVs onto pads and transmit them directly to flash over WebMIDI.
+    * **Installation:** Web-based browser installer via WebMIDI in Chrome/Edge.
+
+16. **[REDACTED by DJ Redacted](https://fm1-redacted-installer.xrhetor.chatgpt.site/):**
+    * **License:** Open Source (GPL-3.0). Built on Felucca by Hügelton Instruments.
+    * **Concept:** Experimental dark, fractured lo-fi four-track groovebox firmware (`PULSE` · `VOLTAGE` · `STATIC` · `GHOST`).
+    * **Features:**
+      * **Four Track Engines:** Four distinct sound layers chosen via `ALGORITHM`.
+      * **Real-Time Track Shapers:** Four top knobs mapped to dynamic performance parameters: `FRACTURE`, `STATIC`, `CHANCE`, and `MUTATE`.
+      * **Startup Artwork:** Custom broken vinyl record splash screen.
+    * **Installation:** Browser WebMIDI installer via USB directly from the project page.
+
+### 1.2. Modular Firmware Platforms & Builders
+
+17. **[Optimist by w0ts](https://github.com/w0ts/optimist):**
+    * **License:** Open Source (GPL-3.0-only). Derived from SLOOP, Felucca, Melodee, and X0X.
+    * **Status:** In active development (tested in emulator).
+    * **Concept:** Modular firmware builder and platform allowing users to custom-assemble FM-1 firmware images tailored to flash and RAM budgets.
+    * **Features:**
+      * **Firmware Builder (`make builder`):** Choose specific synth engines (ANALOG 2, DIGITAL, PHASE, LOFI, SAMPLE, VOICE, TRIO, WHEEL, GRAIN, FM6, SLICE, PHYS, ACID), drum kits, effects (DUST, DUCK, DJ filter, delay, reverb), and sequencer capabilities at compile-time.
+      * **Multi-Layer UI & Sequencer:** SLOOP-style live button-held layers, per-track patterns, scenes, snapshots, fills, microtiming, and parameter locks.
+      * **SLOOP 2.4 Project Compatibility & Web Editor:** Full project interchangeability and web-based parameters librarian.
+    * **Installation:** Build and flash via CLI/Docker toolchain.
+
+### 1.3. Games & Experimental Non-Audio Ports
+
+18. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
+    * **License:** Open Source (GPL-2.0-or-later / GPL-3.0; FreeDM game data under BSD-3-Clause). Based on doomgeneric, Chocolate Doom, and the sloopDX / SLOOP / Felucca platform.
+    * **Concept:** Port of classic Doom (running a FreeDM arena map) on the M-VAVE FM-1 synthesizer hardware.
+    * **Features:**
+      * Rendered directly to the FM-1's color screen with health, armor, ammo, and automap overlay.
+      * Controls mapped to physical synthesizer keys and knobs: F3/B3 or KNOB 1 to turn, A3/G3 forward/back, OCT−/OCT+ or F#3/G#3 to strafe, C5/PLAY to fire, D5/REC to open/use, E5 to run, C#5/D#5/F#5 weapon selection (fist, pistol, shotgun), ARP for automap, and FX for brightness.
+      * Preserves sloopDX projects in flash without overwriting user patch data.
+    * **Installation:** Browser WebMIDI installer via USB directly from the project page.
+
+19. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
     * **License:** Open Source.
     * **Status:** Experimental / Source only (reference proof-of-concept).
     * **Concept:** Nintendo Entertainment System (NES) emulator running on the FM-1 hardware.
     * **Features:** Uses the FM-1's 27 keys as the game controller and its color screen as the television display. Developed as a worked example and educational kit for writing bare-metal FM-1 firmware from scratch.
     * **Installation:** Compile from source (no web installer or prebuilt release; does not produce audio/music).
+
+### 1.4. Stock Firmware Patchers & Binary Mods
+
+20. **[FM-1 Firmware Patcher by Christian Zietz (czietz)](https://github.com/czietz/fm1-firmware-patcher):**
+    * **License:** Open Source (MIT).
+    * **Target:** Stock official **V15** firmware (`FM-1.fwsc`).
+    * **Modifications & Bug Fixes:**
+      * Fixes the oscillator detune calculation in the stock synth engine to accurately match Dexed / Yamaha DX7 behavior.
+      * Disables unhandled MIDI aftertouch messages that cause unwanted heavy vibrato.
+      * Modifies the UI colorway: changes the main oscilloscope display to dark blue and the FX selection cursor to green (as visual confirmation of patched firmware).
+    * **Usage:** Python patcher script applying precise binary offsets (`python patch_firmware.py FM-1.fwsc FM-1-fixed.fwsc`). Flashed via M-VAVE's M-UPGRADE utility.
 
 > [!TIP]
 > **Community Flashing Experience & Safe Upgrade Practice:**  
@@ -117,9 +193,19 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
 ### 2.2. Hardware PCB Characteristics & Recovery Vector
 * **No Debug Ports / Jumpers:** The M-VAVE FM1 PCB contains **no exposed debug headers** (JTAG, SWD, or UART debug pads).
 * **No Recovery Buttons:** There are **no hidden jumper pins or physical recovery buttons** on the board for forcing bootloader / DFU mode.
-* **Firmware Update Vectors:**
+* **Firmware Update & Recovery Vectors:**
   * **Standard User-Mode Flashing:** MIDI SysEx over USB is the official, application-level firmware update channel available on the device.
-  * **Unbrick & Hardware Recovery (JieLi Mask-ROM / UBOOT mode):** The JieLi AC791N SoC boot ROM can be forced into its mask-ROM USB download mode (`UBOOT1.00`) through the external USB-C port using a dedicated **RP2040-based hardware dongle** (or vendor JieLi USB Updater). This dongle bit-bangs the hardware boot key (`0x16EF` at ~50 kHz) over USB D+/D- lines at power-up, allowing SPI flash recovery and unbricking without opening the enclosure (see [ip2k/mvave-fm1-open-firmware](https://github.com/ip2k/mvave-fm1-open-firmware)).
+  * **Software-Bricked Recovery over Plain USB (Mask-ROM `WL82 UBOOT1.00` mode):**
+    * When a firmware flash is corrupt, incomplete, or fails to boot, the JieLi AC791N mask-ROM automatically drops into its built-in USB recovery mass-storage mode: **`WL82 UBOOT1.00 USB Device`** (`VID: 0x4C4A`, `PID: 0x8057`, SCSI / Mass Storage interface).
+    * In this state, **no extra hardware or case opening is required**: a standard USB data cable and [`jl-uboot-tool`](https://github.com/kagaimiq/jl-uboot-tool) on Windows/Linux are sufficient to communicate directly with the SPI flash via SCSI pass-through.
+    * **Crucial Flash Addressing Rules:**
+      * **Bootloader / Head (`0x00000000` – `0x00003FFF`):** NEVER overwrite or erase this 16 KB region. It holds the partition header and boot vector.
+      * **App Code Area (`0x00004000` – `0x00092FFF`):** Extracted application binaries (e.g., from `FM-1.fwsc` via [`fm1_extract_app.py`](https://gist.github.com/Acrawf1/ae2b9930b49231db397568cfc2abc2a8)) MUST be written starting at offset **`0x4000`**, never at `0x0`.
+      * **Felucca 0.9 → 1.0.x Upgrade Brick Fix:** Upgrading from Felucca 0.9-beta to 1.0.x can soft-brick due to incompatible legacy preset structures. Erasing `0x97000 0x8000` and `0xFC000 0x2000` via `jl-uboot-tool` resolves this issue.
+    * Full step-by-step unbricking guide: [Reddit: Unbricking a soft-bricked FM-1 (black screen / "WL82 UBOOT1.00") over plain USB](https://www.reddit.com/r/MVaveFM1/comments/1wz48t7/guide_unbricking_a_softbricked_fm1_black_screen/).
+  * **Hardware Recovery Vector (Forcing Mask-ROM via USB_KEY Dongle):**
+    * If the processor hangs without falling into `WL82 UBOOT1.00` automatically, the mask-ROM download mode can be forced via an external RP2040 dongle ([FM-1 Transporter](https://github.com/kurogedelic/FM-1-transporter) / [mvave-fm1-open-firmware](https://github.com/ip2k/mvave-fm1-open-firmware) / [MvaveFM1Unbricker](https://github.com/Quixotic7/MvaveFM1Unbricker)).
+    * The dongle pulses the JieLi hardware boot key (`0x16EF` at ~50 kHz) over USB D+/D- lines during power-up, allowing SPI flash recovery and unbricking through the external USB-C port without opening the enclosure.
 
 ### 2.3. Device Disassembly & Case Opening Instructions
 To open the physical enclosure of the M-VAVE FM1:
@@ -355,6 +441,14 @@ Useful open-source tools, documentation, and SDK repositories:
     Browser-based generative MIDI sequencer and pattern generator for the M-VAVE FM-1 (Web MIDI API / PWA, runs on desktop/mobile). Generates reproducible 64-step banks with parameter drift and can freeze them directly into the hardware pattern slots over SysEx (supported on Baud Girl / FM-1+VA firmware), or broadcast live MIDI notes in real time.
 14. **[SLOOP FM-1 Simulator by Chance Roth](https://github.com/chancethemaker/sloop-fm1-sim) ([Web Simulator](https://chancethemaker.github.io/sloop-fm1-sim)):**
     Self-contained in-browser interactive simulator of the SLOOP / Felucca firmware for the FM-1, allowing testing controls, sound engines, and workflow directly in the browser without physical hardware.
+15. **[FM-1 Firmware Patcher by Christian Zietz](https://github.com/czietz/fm1-firmware-patcher):**
+    Python patcher utility applying fixes to the official stock V15 firmware binary: corrects oscillator detune to match Dexed, strips unexpected MIDI aftertouch vibrato, and updates oscilloscope/cursor palette.
+16. **[Unbricking a Soft-Bricked FM-1 over Plain USB (Reddit Guide by acrawf1)](https://www.reddit.com/r/MVaveFM1/comments/1wz48t7/guide_unbricking_a_softbricked_fm1_black_screen/):**
+    Detailed community guide for recovering devices stuck on a black screen in `WL82 UBOOT1.00` mode (`VID_4C4A:PID_8057`) via plain USB cable and `jl-uboot-tool` without extra hardware. Includes the [`fm1_extract_app.py` helper script](https://gist.github.com/Acrawf1/ae2b9930b49231db397568cfc2abc2a8).
+17. **[FM-1 Transporter by Leo Kuroshita (kurogedelic)](https://github.com/kurogedelic/FM-1-transporter):**
+    Hardware RP2040-based USB dongle firmware that pulses the JieLi `USB_KEY` pattern (`0x16EF`) to force unresponsive FM-1 devices into mask-ROM USB download mode for emergency flash recovery.
+18. **[MvaveFM1Unbricker by Quixotic7](https://github.com/Quixotic7/MvaveFM1Unbricker):**
+    Unbricking documentation, troubleshooting guides, and RP2040 dongle reference instructions for M-VAVE FM-1 recovery.
 
 
 
