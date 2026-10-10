@@ -154,11 +154,16 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
     * **Features:** Live USB audio sampling, project export straight to Ableton Live sets, companion Android controller application.
     * **Installation:** Build and flash via CLI toolchain.
 
-22. **[FM1 Move by Nicodesy06](https://github.com/Nicodesy06/FM1-MOVE) ([Web Simulator](https://nicodesy06.github.io/FM1-MOVE/sim/) | [Manual](https://nicodesy06.github.io/FM1-MOVE/manual/)):**
-    * **License:** Open Source (GPL-3.0).
-    * **Concept:** 8-track live groovebox firmware inspired by the Ableton Move workflow.
-    * **Features:** Performance-oriented pad and sequence navigation, parameter locks, scene chaining, and an interactive in-browser simulator.
-    * **Installation:** Browser WebMIDI installer via USB.
+22. **[FM1 Move by Nicodesy06](https://github.com/Nicodesy06/FM1-MOVE) ([Web Simulator](https://nicodesy06.github.io/FM1-MOVE/sim/) | [Device Installer & Manager](https://nicodesy06.github.io/FM1-MOVE/device/) | [Manual / Quick Start](https://nicodesy06.github.io/FM1-MOVE/manual/) | [Source Branch](https://github.com/Nicodesy06/FM1-MOVE/tree/fm1-move/dev)):**
+    * **License:** Open Source (GPL-3.0). Built upon SLOOP 2.5 by isod89.
+    * **Concept:** Eight-track groovebox firmware for the FM-1 inspired by the Ableton Move workflow, featuring a custom 240 × 240 UI designed for live performance.
+    * **Features:**
+      * **8 Independent Tracks:** Flexible track assignments (any combination of synth tracks or drum kits).
+      * **Clips & Scenes:** Performance-oriented clips and scene launcher replacing traditional linear song arrangers.
+      * **Browser Simulator:** Firmware compiled to WebAssembly running directly on a simulated device panel in the browser.
+      * **Device Page:** In-browser WebMIDI tool to install/backup firmware, manage presets, kits, FM6 banks, and samples.
+      * **Status:** Verified in host simulation and builds cleanly for the JieLi AC791N target compiler (experimental / hardware verification in progress).
+
 
 23. **[FuMi-1 by cartesive](https://github.com/cartesive/fumi-1) ([Web Installer & Emulator](https://cartesive.github.io/fumi-1/)):**
     * **License:** Open Source (GPL-3.0). Fork of FoMni.
