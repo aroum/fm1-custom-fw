@@ -568,7 +568,105 @@ Useful open-source tools, documentation, and SDK repositories:
     Readable C source implementation of the stock FM-1 bootloader, reverse-engineered and reconstructed byte-identically from the hardware image.
 28. **[MvaveFM1-Designer by Quixotic7](https://github.com/Quixotic7/MvaveFM1-Designer):**
     Visual UI and panel state designer for FM-1 custom developers (mapping key/button LED states, knob functions, and OLED/TFT screen layouts).
-29. **[fm1-factory-presets by KingParamount](https://github.com/KingParamount/fm1-factory-presets):**
-    The original 128 factory voices recovered and archived as four DX7 SysEx bank dumps, with detailed provenance tracing and protocol documentation.
-30. **[fm1-banks by mene311](https://github.com/mene311/fm1-banks) ([Audio Gallery](https://mene311.github.io/fm1-banks/)):**
-    26 curated 32-voice DX7 banks (832 patches total) formatted for the FM-1 with provenance documentation and audio samples.
+29. **[fm1-linux-update by fuleo](https://github.com/fuleo/fm1-linux-update):**
+    Linux CLI updater tool for flashing and verifying stock V14 to V15 firmware binaries over USB-MIDI.
+30. **[MVAVE-M-UPGRADE-decompiled by entitymar](https://github.com/entitymar/MVAVE-M-UPGRADE-decompiled):**
+    Full decompilation and resource extraction of the official M-VAVE M-UPGRADE macOS and Windows updater applications.
+31. **[fm-static by seajaysec](https://github.com/seajaysec/fm-static) ([Web App](https://seajaysec.github.io/fm-static/)):**
+    WebMIDI flasher solving the issue where an FM-1's USB-MIDI port identifies under an unusual/renamed descriptor, which causes official updaters to report the synthesizer as missing.
+32. **[fm1-read-voice by Christian Zietz](https://github.com/czietz/fm1-read-voice):**
+    Python utility to request and read the currently active sound patch back from the FM-1 hardware over USB-MIDI SysEx.
+33. **[sloop-fm1-go by jahlib](https://github.com/jahlib/sloop-fm1-go):**
+    Android-native touchscreen companion and project editor for SLOOP custom firmware.
+34. **[SLOOP 8-Track Web Workstation by smhulme](https://github.com/smhulme/sloop-web-8trk):**
+    Hybrid production environment driving SLOOP's four hardware tracks over WebMIDI while adding four synchronized browser audio tracks alongside them.
+35. **[FM-1 Utility](https://fm1-utility.pages.dev/):**
+    Lightweight, dependency-free WebMIDI parameter editor and diagnostic tool for the FM-1.
+36. **[DXcompanion](https://dxcompanion.uk/):**
+    Browser-based patch and parameter editor for the Yamaha DX synth family featuring experimental M-VAVE FM-1 support.
+37. **[Dexed by asb2m10](https://asb2m10.github.io/dexed/):**
+    Open-source DX7 plugin and editor. The FM-1 hardware natively responds to Dexed real-time parameter-change SysEx messages for live DAW sound design.
+38. **[Schwung by Charles Vestal](https://github.com/charlesvestal/schwung):**
+    Open-source music architecture framework for standalone devices. Core synthesis code and models (TR-909, TR-808, TB-303, PSX Verb) are shared with the X0X and Lunar Modulator FM-1 firmwares.
+
+---
+
+## 12. Documentation, Protocols & Guides
+
+Comprehensive technical references and community guides:
+
+1. **[FM-1 MIDI & SysEx Guide (by Baud Girl)](https://m-vave-fm1-midi-guide.up.railway.app/):**
+   Exhaustive human-readable documentation of the FM-1 MIDI implementation: channels, SysEx structure, CC mappings for internal DSP effects, and clock synchronization.
+2. **[FM-1 SysEx Protocol & Provenance (by KingParamount)](https://github.com/KingParamount/fm1-factory-presets/blob/main/docs/protocol-and-provenance.md):**
+   Technical documentation of the FM-1 handshake sequence, 7-bit payload packing, and bulk dump transfers.
+3. **[FM-1 OTA Protocol & Architecture Docs (AL-255/FM-1-RE)](https://github.com/AL-255/FM-1-RE/blob/main/docs/io/11-ota-protocol.md):**
+   In-depth specifications for the USB-MIDI packet framing, session handshakes, and XIP flash memory layouts.
+4. **[FM-1 Easy Guide (by pingywon)](https://pingywon.github.io/fm1-easy-guide/) ([Source](https://github.com/pingywon/fm1-easy-guide)):**
+   Beginner-friendly rewrite of the official manual with an interactive step-by-step browser walkthrough.
+5. **[fm1-guide (by fuleo)](https://fuleo.github.io/fm1-guide/):**
+   Practical operational notes covering sequencer workflows, the V15 reverb bugfix, and Linux flashing procedures.
+6. **[FM-1 on Tao of Mac (by Rui Carmo)](https://taoofmac.com/space/com/m-vave/fm-1):**
+   Architectural notes, teardown observations, and hackability insights.
+7. **[Felucca BUILDING.md Guide](https://github.com/hugelton/Felucca/blob/main/BUILDING.md):**
+   Complete build guide for compiling Felucca-family firmwares from source using the JieLi `pi32v2` toolchain.
+8. **[FM-1 NES APP_UPDATES.md Guide](https://github.com/Keitark/fm1-nes/blob/main/APP_UPDATES.md):**
+   Developer guide detailing application-only updates (`app.bin`) that preserve the stock USB bootloader.
+
+---
+
+## 13. Hardware Add-ons & DIY Enhancements
+
+Community hardware companion projects and accessories:
+
+1. **[FM-1 Bonus Box by pfkellogg](https://github.com/pfkellogg/fm1-bonus-box):**
+   ESP32-S3 external companion module featuring a rotary preset browser with round color TFT, sustain pedal input, Wi-Fi bank manager, USB-MIDI host, and a sing-on-pitch voice trainer.
+2. **[fm1-sustain-footswitch by pfkellogg](https://github.com/pfkellogg/fm1-sustain-footswitch):**
+   Arduino-based adapter converting a standard 1/4" sustain pedal into MIDI CC64 over the FM-1's 3.5 mm TRS MIDI input (includes full schematics).
+3. **[fm1-midi-voice-tuner by pfkellogg](https://github.com/pfkellogg/fm1-midi-voice-tuner):**
+   Passive TRS MIDI splitter box with built-in microphone and OLED pitch display guiding singers on whether they match the FM-1's current note.
+
+---
+
+## 14. Articles, Reviews & Community Analyses
+
+Articles and press coverage detailing hardware capabilities and firmware evolution:
+
+* **[Synth Anatomy: M-VAVE FM-1 Review](https://synthanatomy.com/2026/07/m-vave-fm-1-review-low-budget-pocket-fm-ynthesizer-with-iconic-sounds.html):** In-depth hardware teardown, performance evaluation, and feature walkthrough.
+* **[Synth Anatomy: FM-1 V15 Update](https://synthanatomy.com/2026/07/m-vave-fm-1-a-budget-friendly-dx-7-style-desktop-fm-polysynth.html):** Overview of official V15 firmware updates and MIDI fixes.
+* **[Synth Anatomy: Baud Girl FM-1+VA](https://synthanatomy.com/2026/09/baud-girl-fm-1-va-custom-m-vave-fm-1-firmware.html):** Detailed review of the first community firmware adding Virtual Analog synthesis and 64-step sequencing.
+* **[Synth Anatomy: Felucca 1.0 Release](https://synthanatomy.com/2026/10/hugelton-instruments-felucca-custom-m-vave-fm-1-firmware-turns-it-into-a-multi-engine-synth.html):** Coverage of Hügelton Instruments' multi-engine open-source platform.
+* **[Synth Anatomy: SLOOP Groovebox](https://synthanatomy.com/2026/10/3dsam-sloop-custom-firmware-turns-m-vave-fm-1-into-a-4-track-groovebox.html):** Feature breakdown of SLOOP 4-track groovebox with USB audio.
+* **[Synth Anatomy: X0X Techno Firmware](https://synthanatomy.com/2026/10/charles-vestal-x0x-custom-firmware-turns-the-m-vave-fm-1-into-a-rebirth-like-groovebox.html):** Examination of Charles Vestal's ReBirth-inspired 303/808/909 firmware.
+* **[Synth Anatomy: Groove OS](https://synthanatomy.com/2026/10/groove-os-turns-the-m-vave-fm-1-into-an-8-track-groovebox.html):** Coverage of the commercial 8-track groovebox firmware.
+* **[Piano & Synth Magazine: Custom Firmware Collection](https://pianoandsynth.com/m-vave-fm-1-custom-firmware-collection/):** Side-by-side comparison matrix of major FM-1 custom firmwares.
+* **[Sonicstate: Free Custom Firmware for M-VAVE FM-1](https://sonicstate.com/news/2026/09/29/free-custom-firmware-for-mvave-fm-1-/):** News coverage of third-party firmware development.
+* **[Time To House: M-VAVE FM-1 Budget DX7 Synth](https://timetohouse.com/en/articles/m-vave-fm-1-budget-dx7-fm-synth):** Architecture analysis and sound capabilities overview.
+
+---
+
+## 15. Video Walkthroughs & Demonstrations
+
+Curated video guides, reverse-engineering analyses, and live jams:
+
+* **[Synth Anatomy: M-Vave FM-1 Review — The $70 Pocket DX-7](https://www.youtube.com/watch?v=q3e2zH_-5I8):** Full hardware and synth overview.
+* **[Maks Makes: Reverse-Engineering MIDI CC Mappings](https://www.youtube.com/watch?v=vWRd1A8I3gc):** Discovering effect parameters and CC control maps.
+* **[Sound Import & DX7 SysEx Tutorial](https://www.youtube.com/watch?v=zDfeGawNeJU):** Loading standard Yamaha DX7 `.syx` sound banks.
+* **[Firmware Upgrade Walkthrough](https://www.youtube.com/watch?v=n-TShi-a5OA):** Flashing `.fwsc` firmware files via M-UPGRADE.
+* **[Bluetooth BLE-MIDI Controller Setup](https://www.youtube.com/watch?v=Eu2BY2PxT5M):** Using the FM-1 as a wireless MIDI controller with iOS synths.
+* **[Baud Girl FM-1+VA Comprehensive Tutorial (NatLife Sounds)](https://www.youtube.com/watch?v=jfuoEBIUsEE):** Programming VA engines and the dot-matrix sequencer.
+* **[Felucca 0.9 Complete Guide](https://www.youtube.com/watch?v=UzgbDjsFEpY):** Full feature walkthrough and sound demonstrations.
+* **[Felucca First Look & Engine Tour](https://www.youtube.com/watch?v=EzFknmhtKZk):** Multi-track sequencing, engines, and quantization.
+* **[Felucca Live Performance Jam](https://www.youtube.com/watch?v=XEK4VhsYwCE):** Live improvised session on Felucca custom firmware.
+
+---
+
+## 16. Community Hubs & Discussions
+
+Where the M-VAVE FM-1 community discusses reverse engineering, troubleshooting, and new releases:
+
+* **[Reddit: r/MVaveFM1](https://www.reddit.com/r/MVaveFM1/):** The primary community hub for custom firmware releases, unbricking help, and hardware hacks.
+* **[KVR Audio: M-VAVE FM-1 Thread](https://www.kvraudio.com/forum/viewtopic.php?t=632127):** Technical thread where factory preset recovery and early tools were first shared.
+* **[Hacker News: FM-1 Reverse-Engineering Discussion](https://news.ycombinator.com/item?id=49994065):** Discussion on the FM-1-RE architecture and JieLi SoC discoveries.
+* **[Elektronauts: M-VAVE FM-1 Thread](https://www.elektronauts.com/t/m-vave-fm-1/252170):** Groovebox workflow discussions, firmware releases, and audio demos.
+* **[Gearspace: M-VAVE FM-1 Owners Thread](https://gearspace.com/threads/m-vave-fm-1.1465371/):** Hardware impressions, comparison with Yamaha DX-series hardware, and tips.
+
