@@ -208,9 +208,28 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
     * **Concept:** Polyphonic 16-step sequencer and bare-metal hardware abstraction layer (HAL) written in strict C99 for the AC791N's pi32v2 CPU.
     * **Installation:** Compile from source.
 
+32. **[JIANT FM by juanjiant-bit](https://github.com/juanjiant-bit/JIANT) ([Online Emulator](https://juanjiant-bit.github.io/JIANT/) | [Web Installer](https://juanjiant-bit.github.io/JIANT/webapp/installer/) | [Web Editor](https://juanjiant-bit.github.io/JIANT/webapp/editor/)):**
+    * **License:** Open Source (GPL-3.0-only). Built upon Felucca 1.1.5.1 and SLOOP.
+    * **Concept:** Bio-synthetic groovebox & performance synthesizer OS for the FM-1 with a high-contrast "thermal camera" UI theme (ironbow gradient palette and Chakra Petch typography). Treat each sound engine as an organic bio-organism reacting dynamically in real time.
+    * **Features:**
+      * **6 Multi-Engine Tracks (T1–T6):** Flexible pattern sequencing with compressed song sections (storing 8 songs × 4 sections within the FM-1's flash boundary).
+      * **8 Distinct Sound Engines:**
+        * `ANALOG`: Dual-oscillator analog synth with hard sync, ring mod, 3-saw supersaw, and per-voice multi-mode filter.
+        * `FM6`: 6-operator FM engine (Dexed core) with native `.syx` patch import.
+        * `PHASE`: Feedback phase-distortion synthesis engine.
+        * `LOFI`: Bytebeat (`BYTE`) and floatbeat (`FLOAT`) algorithmic generator with 32 selectable math formulas, live motion (`MOTN`), pitch bending (`BEND`), and looping (`LOOP`).
+        * `VOICE`: Formant/speech synthesis model.
+        * `WHEEL`: Tone wheel organ emulation.
+        * `NOISE`: Dedicated metallic and noise percussive generator.
+        * `DRUM-X`: Bio-percussion kit with colony-morphing X-MOD tempo-synced LFOs.
+      * **Bus Slicer (SL BUS):** 16-step mix-bus stutter/repeater and pitch-slicing processor (can be routed post-effects or pre-effects tail).
+      * **Technical Visualizer:** Live display curves for envelopes, LFOs, distortion, delay, reverb, and thermal isotherm spectrum.
+      * **Live Performance Navigation:** Quick page-jumping by turning the `PRESETS` encoder while holding page navigation buttons.
+    * **Installation:** One-click USB browser installer, web-based companion librarian/editor, or in-browser emulator.
+
 ### 1.2. Modular Firmware Platforms & Builders
 
-32. **[Optimist by w0ts](https://github.com/w0ts/optimist):**
+33. **[Optimist by w0ts](https://github.com/w0ts/optimist):**
     * **License:** Open Source (GPL-3.0-only). Derived from SLOOP, Felucca, Melodee, and X0X.
     * **Status:** In active development (tested in emulator).
     * **Concept:** Modular firmware builder and platform allowing users to custom-assemble FM-1 firmware images tailored to flash and RAM budgets.
@@ -220,14 +239,14 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * **SLOOP 2.4 Project Compatibility & Web Editor:** Full project interchangeability and web-based parameters librarian.
     * **Installation:** Build and flash via CLI/Docker toolchain.
 
-33. **[Dinghy by Sven Trogus (zvenson)](https://github.com/zvenson/dinghy):**
+34. **[Dinghy by Sven Trogus (zvenson)](https://github.com/zvenson/dinghy):**
     * **License:** Open Source (GPL-3.0-only).
     * **Concept:** Minimal, clean firmware skeleton for custom developers: 4-voice sine wave synthesizer on top of working display, audio DMA, and button input drivers.
     * **Installation:** Compile and flash via Makefile/CLI.
 
 ### 1.3. Gaming, Emulators & Non-Audio Ports (Games & Experiments)
 
-34. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
+35. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
     * **License:** Open Source (GPL-2.0-or-later / GPL-3.0; FreeDM game data under BSD-3-Clause). Based on doomgeneric, Chocolate Doom, and the sloopDX / SLOOP / Felucca platform.
     * **Concept:** Port of classic Doom (running a FreeDM arena map) on the M-VAVE FM-1 synthesizer hardware.
     * **Features:**
@@ -236,26 +255,26 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * Preserves sloopDX projects in flash without overwriting user patch data.
     * **Installation:** Browser WebMIDI installer via USB directly from the project page.
 
-35. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
+36. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
     * **License:** Open Source.
     * **Status:** Experimental / Source only (reference proof-of-concept).
     * **Concept:** Nintendo Entertainment System (NES) emulator running on the FM-1 hardware.
     * **Features:** Uses the FM-1's 27 keys as the game controller and its color screen as the television display. Developed as a worked example and educational kit for writing bare-metal FM-1 firmware from scratch.
     * **Installation:** Compile from source (no web installer or prebuilt release; does not produce audio/music).
 
-36. **[Mocky by Charles Vestal](https://github.com/charlesvestal/fm1-mocky) ([Web App](https://charlesvestal.github.io/fm1-mocky/)):**
+37. **[Mocky by Charles Vestal](https://github.com/charlesvestal/fm1-mocky) ([Web App](https://charlesvestal.github.io/fm1-mocky/)):**
     * **License:** Open Source (GPL-3.0).
     * **Concept:** Display testing firmware and web companion for transmitting and displaying arbitrary bitmap pictures on the FM-1's color screen over WebMIDI.
     * **Installation:** Browser WebMIDI installer via USB.
 
-37. **[fm1-mdx by Keitark](https://github.com/Keitark/fm1-mdx):**
+38. **[fm1-mdx by Keitark](https://github.com/Keitark/fm1-mdx):**
     * **License:** Open Source (GPL-3.0).
     * **Concept:** Experimental Sharp X68000 MDX/PDX karaoke music player running a software YM2151 FM chip emulation allowing interactive part muting and live keyboard accompaniment.
     * **Installation:** Research project / computer emulator testing.
 
 ### 1.4. Stock Firmware Patchers & Binary Mods
 
-38. **[FM-1 Firmware Patcher by Christian Zietz (czietz)](https://github.com/czietz/fm1-firmware-patcher):**
+39. **[FM-1 Firmware Patcher by Christian Zietz (czietz)](https://github.com/czietz/fm1-firmware-patcher):**
     * **License:** Open Source (MIT).
     * **Target:** Stock official **V15** firmware (`FM-1.fwsc`).
     * **Modifications & Bug Fixes:**
