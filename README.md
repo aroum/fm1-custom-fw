@@ -1,6 +1,6 @@
-# M-VAVE FM1 & M-UPGRADE Analysis & MIDI SysEx Protocol Documentation
+# M-VAVE FM1 Resource Hub, Custom Firmwares & MIDI SysEx Protocol Documentation
 
-This document contains technical research, hardware details, and reverse-engineering results for the **M-VAVE FM1** synthesizer (powered by the **JieLi AC791N** processor) and the `M-UPGRADE-FM1.app` (macOS) utility.
+A curated directory and reference hub for the **M-VAVE FM1** synthesizer (powered by the **JieLi AC791N** processor) — gathering community custom firmwares, documentation, tools, MIDI SysEx protocol details, and the `M-UPGRADE-FM1.app` (macOS) updater.
 
 ---
 
