@@ -449,7 +449,7 @@ Useful open-source tools, documentation, and SDK repositories:
     Hardware RP2040-based USB dongle firmware that pulses the JieLi `USB_KEY` pattern (`0x16EF`) to force unresponsive FM-1 devices into mask-ROM USB download mode for emergency flash recovery.
 18. **[MvaveFM1Unbricker by Quixotic7](https://github.com/Quixotic7/MvaveFM1Unbricker):**
     Unbricking documentation, troubleshooting guides, and RP2040 dongle reference instructions for M-VAVE FM-1 recovery.
-
-
-
-
+19. **[Virtual-FM-1 by jbschooley](https://github.com/jbschooley/Virtual-FM-1):**
+    Software replica of the M-VAVE FM-1: standalone FM synthesizer application and VST3/AU audio plugin featuring bidirectional preset and pattern synchronization with hardware over the Baud Girl (FM-1+VA) firmware.
+20. **[awesome-fm-1 by cicloid](https://github.com/cicloid/awesome-fm-1):**
+    A curated awesome-list of resources, custom firmwares, tools, and open-source projects for the M-VAVE FM-1 pocket synthesizer.
