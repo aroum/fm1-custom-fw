@@ -227,9 +227,20 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * **Live Performance Navigation:** Quick page-jumping by turning the `PRESETS` encoder while holding page navigation buttons.
     * **Installation:** One-click USB browser installer, web-based companion librarian/editor, or in-browser emulator.
 
+33. **[Felucca [Salt] by Chance Roth (ChanceTheMaker)](https://github.com/ChanceTheMaker/Felucca) ([Web Installer](https://chancethemaker.github.io/Felucca/webapp/installer/) | [Web Studio](https://chancethemaker.github.io/Felucca/webapp/editor/)):**
+    * **License:** Open Source (GPL-3.0-only). Enhanced fork of Felucca by Leo Kuroshita (Hügelton Instruments).
+    * **Concept:** Multi-engine synthesizer firmware with hardware-inspired browser Studio, hardware TRS MIDI expansion, rich display palettes, and standalone in-browser sound generation.
+    * **Features:**
+      * **Studio & In-Browser Synthesizer:** Browser Studio can act as an online synthesizer without physical hardware (nine engines, 54 presets, live oscilloscope waveform, 12 hardware themes like Stage Red, Matrix, Vintage DX, Model D, Vaporwave, and on-screen keyboard).
+      * **Hardware TRS MIDI Input:** Full expression handling on 3.5 mm TRS MIDI IN alongside USB (sustain pedal, pitch bend, mod-wheel vibrato, MIDI panic/reset).
+      * **Flexible Clock Sources:** Internal, USB, or TRS clock sync and MIDI Start/Stop/Continue.
+      * **Display Themes & Typography:** 20 on-device screen palettes (including 8 light palettes and light/dark high contrast modes), selectable Terminus Regular/Bold typography.
+      * **Preset Management:** Persistent favorite stars, All/Favorites browsing filtering, and live MIDI event/chord monitor.
+    * **Installation:** Browser-based WebMIDI installer via USB.
+
 ### 1.2. Modular Firmware Platforms & Builders
 
-33. **[Optimist by w0ts](https://github.com/w0ts/optimist):**
+34. **[Optimist by w0ts](https://github.com/w0ts/optimist):**
     * **License:** Open Source (GPL-3.0-only). Derived from SLOOP, Felucca, Melodee, and X0X.
     * **Status:** In active development (tested in emulator).
     * **Concept:** Modular firmware builder and platform allowing users to custom-assemble FM-1 firmware images tailored to flash and RAM budgets.
@@ -239,14 +250,14 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * **SLOOP 2.4 Project Compatibility & Web Editor:** Full project interchangeability and web-based parameters librarian.
     * **Installation:** Build and flash via CLI/Docker toolchain.
 
-34. **[Dinghy by Sven Trogus (zvenson)](https://github.com/zvenson/dinghy):**
+35. **[Dinghy by Sven Trogus (zvenson)](https://github.com/zvenson/dinghy):**
     * **License:** Open Source (GPL-3.0-only).
     * **Concept:** Minimal, clean firmware skeleton for custom developers: 4-voice sine wave synthesizer on top of working display, audio DMA, and button input drivers.
     * **Installation:** Compile and flash via Makefile/CLI.
 
 ### 1.3. Gaming, Emulators & Non-Audio Ports (Games & Experiments)
 
-35. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
+36. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
     * **License:** Open Source (GPL-2.0-or-later / GPL-3.0; FreeDM game data under BSD-3-Clause). Based on doomgeneric, Chocolate Doom, and the sloopDX / SLOOP / Felucca platform.
     * **Concept:** Port of classic Doom (running a FreeDM arena map) on the M-VAVE FM-1 synthesizer hardware.
     * **Features:**
@@ -255,26 +266,26 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * Preserves sloopDX projects in flash without overwriting user patch data.
     * **Installation:** Browser WebMIDI installer via USB directly from the project page.
 
-36. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
+37. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
     * **License:** Open Source.
     * **Status:** Experimental / Source only (reference proof-of-concept).
     * **Concept:** Nintendo Entertainment System (NES) emulator running on the FM-1 hardware.
     * **Features:** Uses the FM-1's 27 keys as the game controller and its color screen as the television display. Developed as a worked example and educational kit for writing bare-metal FM-1 firmware from scratch.
     * **Installation:** Compile from source (no web installer or prebuilt release; does not produce audio/music).
 
-37. **[Mocky by Charles Vestal](https://github.com/charlesvestal/fm1-mocky) ([Web App](https://charlesvestal.github.io/fm1-mocky/)):**
+38. **[Mocky by Charles Vestal](https://github.com/charlesvestal/fm1-mocky) ([Web App](https://charlesvestal.github.io/fm1-mocky/)):**
     * **License:** Open Source (GPL-3.0).
     * **Concept:** Display testing firmware and web companion for transmitting and displaying arbitrary bitmap pictures on the FM-1's color screen over WebMIDI.
     * **Installation:** Browser WebMIDI installer via USB.
 
-38. **[fm1-mdx by Keitark](https://github.com/Keitark/fm1-mdx):**
+39. **[fm1-mdx by Keitark](https://github.com/Keitark/fm1-mdx):**
     * **License:** Open Source (GPL-3.0).
     * **Concept:** Experimental Sharp X68000 MDX/PDX karaoke music player running a software YM2151 FM chip emulation allowing interactive part muting and live keyboard accompaniment.
     * **Installation:** Research project / computer emulator testing.
 
 ### 1.4. Stock Firmware Patchers & Binary Mods
 
-39. **[FM-1 Firmware Patcher by Christian Zietz (czietz)](https://github.com/czietz/fm1-firmware-patcher):**
+40. **[FM-1 Firmware Patcher by Christian Zietz (czietz)](https://github.com/czietz/fm1-firmware-patcher):**
     * **License:** Open Source (MIT).
     * **Target:** Stock official **V15** firmware (`FM-1.fwsc`).
     * **Modifications & Bug Fixes:**
