@@ -124,9 +124,93 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * **Startup Artwork:** Custom broken vinyl record splash screen.
     * **Installation:** Browser WebMIDI installer via USB directly from the project page.
 
+17. **[Hortator by DEADACTIVE](https://github.com/DeadActive/hortator) ([Web Emulator & Player](https://deadactive.github.io/hortator/)):**
+    * **License:** Open Source (GPL-3.0). Built on Felucca.
+    * **Concept:** 8-track drum machine firmware.
+    * **Features:** TR-808, TR-909 and Mutable Instruments Plaits drum models, user samples, Mutable Instruments Grids generative rhythm algorithm, pumping master compressor, and acoustic resonators.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+18. **[ORBIT by dspaudio](https://github.com/dspaudio/orbit) ([Web Emulator](https://dspaudio.github.io/orbit-web-emu/)):**
+    * **License:** Open Source (GPL-3.0). Based on SLOOP.
+    * **Concept:** Groovebox with visual aesthetic and screen interfaces inspired by the Teenage Engineering OP-1.
+    * **Features:** Integrated sample manipulation tools and an event tape mechanism for dynamically shifting and rearranging what the 4 tracks play.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+19. **[AMB-1 by Charles Vestal](https://github.com/charlesvestal/fm1-amb) ([Web Installer & Emulator](https://charlesvestal.github.io/fm1-amb/) | [Manual](https://charlesvestal.github.io/fm1-amb/)):**
+    * **License:** Open Source (GPL-3.0).
+    * **Concept:** Generative ambient synthesizer machine inspired by Brian Eno's *Music for Airports*.
+    * **Features:** Self-generating playback immediately from power-on, unsynced tape loops of unequal lengths, gliding bass lines, and generative Euclidean percussion patterns.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+20. **[April OS by beashoko](https://github.com/beashoko/april-os) ([Web Installer](https://beashoko.github.io/april-os/)):**
+    * **License:** Open Source. Based on Felucca.
+    * **Concept:** Dedicated sampling-focused groovebox firmware.
+    * **Features:** 32 sample slots (up to 3 seconds each), 8-track sequencer, built-in sample slice and loop editor, direct audio recording using a connected smartphone or computer microphone.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+21. **[NoteSorcery by catacombius](https://github.com/catacombius/NoteSorcery):**
+    * **License:** Open Source (GPL-3.0). Built on SLOOP.
+    * **Concept:** OP-1-style 8-track groovebox firmware.
+    * **Features:** Live USB audio sampling, project export straight to Ableton Live sets, companion Android controller application.
+    * **Installation:** Build and flash via CLI toolchain.
+
+22. **[FM1 Move by Nicodesy06](https://github.com/Nicodesy06/FM1-MOVE) ([Web Simulator](https://nicodesy06.github.io/FM1-MOVE/sim/) | [Manual](https://nicodesy06.github.io/FM1-MOVE/manual/)):**
+    * **License:** Open Source (GPL-3.0).
+    * **Concept:** 8-track live groovebox firmware inspired by the Ableton Move workflow.
+    * **Features:** Performance-oriented pad and sequence navigation, parameter locks, scene chaining, and an interactive in-browser simulator.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+23. **[FuMi-1 by cartesive](https://github.com/cartesive/fumi-1) ([Web Installer & Emulator](https://cartesive.github.io/fumi-1/)):**
+    * **License:** Open Source (GPL-3.0). Fork of FoMni.
+    * **Concept:** Traditional Japanese Shigin accompaniment synthesizer inspired by Suikohsha's ST-50.
+    * **Features:** Authentic Koto, Sho, Shakuhachi, and Taiko voices tuned to the historical ST-50 just intonation scale system.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+24. **[CTL-1 by Charles Vestal](https://github.com/charlesvestal/fm1-ctl) ([Web Installer](https://charlesvestal.github.io/fm1-ctl/)):**
+    * **License:** Open Source (GPL-3.0).
+    * **Concept:** Dedicated MIDI master controller firmware for the FM-1.
+    * **Features:** Turns the FM-1's keys and knobs into a multi-channel USB/TRS MIDI controller while providing internal General MIDI sounds for standalone monitoring.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+25. **[fm1-chord by math0ne](https://github.com/math0ne/fm1-chord):**
+    * **License:** Open Source (GPL-3.0). Built on Felucca.
+    * **Concept:** Chord composition tool, chord sequencer, rhythm accompanist, and ear-training aid.
+    * **Installation:** Python installation script via USB MIDI.
+
+26. **[WaveLoop FM-1 by ELI7VH](https://github.com/ELI7VH/Felucca) ([Web Installer](https://eli7vh.github.io/Felucca/)):**
+    * **License:** Open Source (GPL-3.0). Based on Felucca.
+    * **Concept:** Performance firmware specifically mapped for external control via Arturia MiniLab 3.
+    * **Features:** Dedicated track fader mappings, follow-the-track encoder integration, DJ filter mode, and momentary punch-in FX pad triggers.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+27. **[Rainbow mode by joshbartlettband-web](https://github.com/joshbartlettband-web/felucca-rainbow) ([Web Installer & Emulator](https://joshbartlettband-web.github.io/felucca-rainbow/)):**
+    * **License:** Open Source (GPL-3.0). Based on Felucca.
+    * **Concept:** Children's musical exploration instrument with rainbow color-coded keys, 40 animal sound effects and rhythms, safe volume limiter, and access to the complete Felucca engine via secret key combination.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+28. **[PurpleMonkey FM-1 by Quixotic7](https://github.com/Quixotic7/PurpleMonkeyFM1) ([Web Emulator](https://quixotic7.github.io/PurpleMonkeyFM1/emu/)):**
+    * **License:** Open Source (GPL-3.0).
+    * **Concept:** Simplified toddler music instrument featuring a 5-note pentatonic scale, backing drum beats, and zero menus.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+29. **[SLOOP ALG by shaw-core](https://github.com/shaw-core/Sloop_ALG02):**
+    * **License:** Open Source. Based on SLOOP.
+    * **Concept:** Experimental synthesis expansion fork adding Karplus-Strong string synthesis, plucked physical models, additive synthesis, DX7, and VA engines.
+    * **Installation:** Web installer and companion editor.
+
+30. **[FM-1 B-Boy Edition by friendsmakenoise-prog](https://github.com/friendsmakenoise-prog/fm1-pocket-sampler):**
+    * **License:** Open Source.
+    * **Concept:** Late-1990s hip-hop chop sampler firmware featuring 3 sample tracks and a dedicated FM bass/lead lane.
+    * **Installation:** Web installer via USB.
+
+31. **[fm1-polyseq by NOVALENTI](https://github.com/NOVALENTI/fm1-polyseq):**
+    * **License:** Open Source.
+    * **Concept:** Polyphonic 16-step sequencer and bare-metal hardware abstraction layer (HAL) written in strict C99 for the AC791N's pi32v2 CPU.
+    * **Installation:** Compile from source.
+
 ### 1.2. Modular Firmware Platforms & Builders
 
-17. **[Optimist by w0ts](https://github.com/w0ts/optimist):**
+32. **[Optimist by w0ts](https://github.com/w0ts/optimist):**
     * **License:** Open Source (GPL-3.0-only). Derived from SLOOP, Felucca, Melodee, and X0X.
     * **Status:** In active development (tested in emulator).
     * **Concept:** Modular firmware builder and platform allowing users to custom-assemble FM-1 firmware images tailored to flash and RAM budgets.
@@ -136,9 +220,14 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * **SLOOP 2.4 Project Compatibility & Web Editor:** Full project interchangeability and web-based parameters librarian.
     * **Installation:** Build and flash via CLI/Docker toolchain.
 
+33. **[Dinghy by Sven Trogus (zvenson)](https://github.com/zvenson/dinghy):**
+    * **License:** Open Source (GPL-3.0-only).
+    * **Concept:** Minimal, clean firmware skeleton for custom developers: 4-voice sine wave synthesizer on top of working display, audio DMA, and button input drivers.
+    * **Installation:** Compile and flash via Makefile/CLI.
+
 ### 1.3. Games & Experimental Non-Audio Ports
 
-18. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
+34. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
     * **License:** Open Source (GPL-2.0-or-later / GPL-3.0; FreeDM game data under BSD-3-Clause). Based on doomgeneric, Chocolate Doom, and the sloopDX / SLOOP / Felucca platform.
     * **Concept:** Port of classic Doom (running a FreeDM arena map) on the M-VAVE FM-1 synthesizer hardware.
     * **Features:**
@@ -147,16 +236,26 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
       * Preserves sloopDX projects in flash without overwriting user patch data.
     * **Installation:** Browser WebMIDI installer via USB directly from the project page.
 
-19. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
+35. **[FM-1 NES by Keitark](https://github.com/Keitark/fm1-nes):**
     * **License:** Open Source.
     * **Status:** Experimental / Source only (reference proof-of-concept).
     * **Concept:** Nintendo Entertainment System (NES) emulator running on the FM-1 hardware.
     * **Features:** Uses the FM-1's 27 keys as the game controller and its color screen as the television display. Developed as a worked example and educational kit for writing bare-metal FM-1 firmware from scratch.
     * **Installation:** Compile from source (no web installer or prebuilt release; does not produce audio/music).
 
+36. **[Mocky by Charles Vestal](https://github.com/charlesvestal/fm1-mocky) ([Web App](https://charlesvestal.github.io/fm1-mocky/)):**
+    * **License:** Open Source (GPL-3.0).
+    * **Concept:** Display testing firmware and web companion for transmitting and displaying arbitrary bitmap pictures on the FM-1's color screen over WebMIDI.
+    * **Installation:** Browser WebMIDI installer via USB.
+
+37. **[fm1-mdx by Keitark](https://github.com/Keitark/fm1-mdx):**
+    * **License:** Open Source (GPL-3.0).
+    * **Concept:** Experimental Sharp X68000 MDX/PDX karaoke music player running a software YM2151 FM chip emulation allowing interactive part muting and live keyboard accompaniment.
+    * **Installation:** Research project / computer emulator testing.
+
 ### 1.4. Stock Firmware Patchers & Binary Mods
 
-20. **[FM-1 Firmware Patcher by Christian Zietz (czietz)](https://github.com/czietz/fm1-firmware-patcher):**
+38. **[FM-1 Firmware Patcher by Christian Zietz (czietz)](https://github.com/czietz/fm1-firmware-patcher):**
     * **License:** Open Source (MIT).
     * **Target:** Stock official **V15** firmware (`FM-1.fwsc`).
     * **Modifications & Bug Fixes:**
@@ -453,3 +552,23 @@ Useful open-source tools, documentation, and SDK repositories:
     Software replica of the M-VAVE FM-1: standalone FM synthesizer application and VST3/AU audio plugin featuring bidirectional preset and pattern synchronization with hardware over the Baud Girl (FM-1+VA) firmware.
 20. **[awesome-fm-1 by cicloid](https://github.com/cicloid/awesome-fm-1):**
     A curated awesome-list of resources, custom firmwares, tools, and open-source projects for the M-VAVE FM-1 pocket synthesizer.
+21. **[fm1-emulator by Simon Johansson](https://github.com/simonjohansson/fm1-emulator):**
+    Rust-based desktop emulator for the M-VAVE FM-1. Executes firmware binaries (`.fwsc`, `.elf`, `.bin`) on desktop operating systems, emulating the JieLi dual-core CPU and peripheral state.
+22. **[m-wave-fm1-browser-emulator by shcherbakov7](https://github.com/shcherbakov7/m-wave-fm1-browser-emulator):**
+    Rust/WebAssembly in-browser emulation of the AC791N SoC's two `pi32v2` cores and the FM-1's color display.
+23. **[flipper-fm1-recovery by merthsoft](https://github.com/merthsoft/flipper-fm1-recovery):**
+    Firmware flasher and unbricker utility utilizing a **Flipper Zero** to pulse the hardware ROM recovery sequence on the FM-1's USB data pins without requiring an RP2040 dongle or wiring.
+24. **[FM1VST by Quixotic7](https://github.com/Quixotic7/FM1VST):**
+    DAW plugin host (VST3, AU, and standalone) running Felucca-family firmwares (ChoralRoot, Felucca, Melodee) compiled directly from source and switchable on the fly.
+25. **[FM-1 Mobile by hb3p8](https://github.com/hb3p8/fm1-mobile-emu) ([Web App](https://hb3p8.github.io/fm1-mobile-emu/)):**
+    Compilation of real FM-1 firmware engines (X0X, Felucca, SLOOP, FiMba-1) into WebAssembly paired with a mobile-optimized touch interface reproducing the hardware control layout on phones.
+26. **[FM-1 Workbench by thegiantsnail](https://github.com/thegiantsnail/fm1-workbench-public) ([Web App](https://fm1-workbench.web.app)):**
+    Multi-platform utility suite (Web app, Android app, VST3/CLAP plugin, and Model Context Protocol MCP server) featuring a DX7 preset library, voice randomizer/mutator, drum sequencer, and MIDI file player.
+27. **[fm1-bootloader by jvitkauskas](https://github.com/jvitkauskas/fm1-bootloader):**
+    Readable C source implementation of the stock FM-1 bootloader, reverse-engineered and reconstructed byte-identically from the hardware image.
+28. **[MvaveFM1-Designer by Quixotic7](https://github.com/Quixotic7/MvaveFM1-Designer):**
+    Visual UI and panel state designer for FM-1 custom developers (mapping key/button LED states, knob functions, and OLED/TFT screen layouts).
+29. **[fm1-factory-presets by KingParamount](https://github.com/KingParamount/fm1-factory-presets):**
+    The original 128 factory voices recovered and archived as four DX7 SysEx bank dumps, with detailed provenance tracing and protocol documentation.
+30. **[fm1-banks by mene311](https://github.com/mene311/fm1-banks) ([Audio Gallery](https://mene311.github.io/fm1-banks/)):**
+    26 curated 32-voice DX7 banks (832 patches total) formatted for the FM-1 with provenance documentation and audio samples.
