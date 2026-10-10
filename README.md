@@ -6,9 +6,9 @@ This document contains technical research, hardware details, and reverse-enginee
 
 ## 1. Custom & Alternative Firmwares
 
-Community-developed custom firmwares, mods, and experimental firmware projects for the M-VAVE FM-1, organized by category:
+Community-developed custom firmwares, mods, and experimental firmware projects for the M-VAVE FM-1, clearly divided into sound/groovebox instruments, modular builders, games and non-audio ports, and stock binary patchers:
 
-### 1.1. Sound, Synthesizer & Groovebox Firmwares
+### 1.1. Sound, Synthesizer & Groovebox Firmwares (Music & Audio)
 
 1. **[Felucca by hugelton](https://github.com/hugelton/Felucca) ([Web Installer](https://hugelton.github.io/Felucca/) | [Web Editor](https://hugelton.github.io/Felucca/webapp/editor/)):**
    * **License:** Open Source (GPL-3.0-only).
@@ -225,7 +225,7 @@ Community-developed custom firmwares, mods, and experimental firmware projects f
     * **Concept:** Minimal, clean firmware skeleton for custom developers: 4-voice sine wave synthesizer on top of working display, audio DMA, and button input drivers.
     * **Installation:** Compile and flash via Makefile/CLI.
 
-### 1.3. Games & Experimental Non-Audio Ports
+### 1.3. Gaming, Emulators & Non-Audio Ports (Games & Experiments)
 
 34. **[FM-1 Doom by Sven Trogus (zvenson)](https://github.com/zvenson/fm1doom) ([Web Installer](https://dx7.designburgapps.com/doom/)):**
     * **License:** Open Source (GPL-2.0-or-later / GPL-3.0; FreeDM game data under BSD-3-Clause). Based on doomgeneric, Chocolate Doom, and the sloopDX / SLOOP / Felucca platform.
