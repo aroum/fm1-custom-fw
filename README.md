@@ -1272,6 +1272,26 @@ Firmwares featuring original sound engines, written-from-scratch architectures, 
       * **LFO & Stereo Effects:** 6-waveform LFO ranging from 0.05 Hz up to ~100 Hz in Fast audio-rate mode with 31 tempo-sync divisions; 4-type stereo chorus, analog-slewing tempo-synced ping-pong delay, and 44.1 kHz Dattorro plate reverb (7 room algorithms).
       * **Dual-Track Sequencer & Factory Soundbank:** Two polyphonic tracks (A & B) sharing 256 steps with independent track lengths, clock divisions, ratchets (1–4), and probability; 64 factory presets + 35 user slots; class-compliant 44.1 kHz / 16-bit USB stereo audio and 1:1 MIDI CC control.
 
+84. **[GLIDER by ttreu](https://github.com/ttreu/fm1-glider) ([Website & Downloads](https://subcity.at/fm1-glider/) | [Web Installer](https://subcity.at/flash/fm1-glider/) | [Browser Simulator](https://subcity.at/demo/fm1-glider/)):**
+    * **License:** Open Source (GPL-3.0-only with the FM1 SDK linking exception). Built on FM1 Open V14.
+    * **Polyphony:** Up to 16 latched tones (a CPU guard lowers the limit under load).
+    * **Concept:** Drone synth: white keys latch scale tones on and off, black keys glide them up or down the scale like a steel guitar, always in key.
+    * **Features:** 25 scales incl. chords as scales, equal or just tuning; two-oscillator voices with overtones, undertones, drift and an interval voice; 22 presets; self-oscillating tape echo, ladder filter, delay, shimmer reverb, tempo sync and MIDI clock; a synthesized microsound drum track (27 slots, 16 steps, probability, ratchets, random beats). No samples.
+    * **Status:** Beta, tested on one FM-1 (October 2026).
+
+85. **[GLITCH by ttreu](https://github.com/ttreu/fm1-glitch) ([Website & Downloads](https://subcity.at/fm1-glitch-drums/) | [Web Installer](https://subcity.at/flash/fm1-glitch-drums/) | [Browser Simulator](https://subcity.at/demo/fm1-glitch-drums/) | [Releases](https://github.com/ttreu/fm1-glitch/releases)):**
+    * **License:** Open Source (GPL-3.0-only with the FM1 SDK linking exception). Built on FM1 Open V14.
+    * **Concept:** Drum machine for glitch and microsound beats; every sound is synthesized.
+    * **Features:** 27 slots (clicks, click trains, crunch, noise snaps, micro kicks, speaker pops, high beeps …) with pitch, decay, color and random per hit; polymetric sequencer up to 64 steps per slot with own rate, probability, ratchets, micro timing, accent and flam; random beats and mutating loops; 16 stutter and 11 punch-in effects on the keys; tape echo, delay, drive filter, shimmer reverb; 16 patterns on the device; MIDI notes, clock, start and stop.
+    * **Status:** Beta, tested on one FM-1 (October 2026).
+
+86. **[ARPHONY by ttreu](https://github.com/ttreu/fm1-arphony) ([Website & Downloads](https://subcity.at/fm1-arphony/) | [Web Installer](https://subcity.at/flash/fm1-arphony/) | [Browser Simulator](https://subcity.at/demo/fm1-arphony/)):**
+    * **License:** Open Source (GPL-3.0-only with the FM1 SDK linking exception). Built on FM1 Open V14 and the GLIDER voice engine.
+    * **Polyphony:** 14 voices (8 for the riff, 2 for the bass, 4 for chord tones).
+    * **Concept:** Modal arpeggiator: a repeating single-note riff on top, the bass and up to two chord tones below, chords moving slowly through a mode.
+    * **Features:** 17 riffs plus rule-based random riffs (SEQ); 14 progressions in six modes, recoloured by turning the mode, plus random chords; harmony modes LEAD (riff moves to the nearest chord tones), PEDAL, FOLLOW and PENTA; chords on the keys with own bass or over the tonic; six riff sounds, tape echo, filter, delay, shimmer reverb; 15 presets and 16 user presets; full-colour display that follows the chord; MIDI in (notes choose chords, clock) and MIDI out on channels 1–3.
+    * **Status:** Beta, tested on one FM-1 (October 2026).
+
 ### 1.2. Modular Firmware Platforms & Builders
 
 
