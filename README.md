@@ -1303,6 +1303,13 @@ Firmwares featuring original sound engines, written-from-scratch architectures, 
     * **Features:** 17 riffs plus rule-based random riffs (SEQ); 14 progressions in six modes, recoloured by turning the mode, plus random chords; harmony modes LEAD (riff moves to the nearest chord tones), PEDAL, FOLLOW and PENTA; chords on the keys with own bass or over the tonic; six riff sounds, tape echo, filter, delay, shimmer reverb; 15 presets and 16 user presets; full-colour display that follows the chord; MIDI in (notes choose chords, clock) and MIDI out on channels 1–3.
     * **Status:** Beta, tested on one FM-1 (October 2026).
 
+87. **[CYMA-1 by Team EG & Lizard_Man](https://github.com/TEG-Lizard-Man/cyma-1) ([Release & Download](https://github.com/TEG-Lizard-Man/cyma-1/releases/latest) | [Browser Version](https://teg-lizard-man.github.io/cyma-1/) | [Install Guide](https://github.com/TEG-Lizard-Man/cyma-1/blob/main/notes/INSTALL.md)):**
+    * **License:** Open Source (MPL-2.0). Built upon `fm1-base` (Charles Vestal) and `felucca-bsp` (Leo Kuroshita).
+    * **Concept:** A playable Chladni plate: modal synthesis of a struck, bowed or pressed plate (24 objects in bronze, steel, glass and wood), where the on-screen sand settles on the nodal lines of the modes you hear. The same physics draws the picture and makes the sound.
+    * **Features:** Three views (SAND, FIELD, MESH) and two colour themes; live plate morphing (circle › hex › square › triangle › star) while it rings; pressure, bowing and palm damping; user sound slots with a USB Sounds tool, backups and shareable sound codes; MIDI in; a browser version built from the same code.
+    * **Requirements:** Stock **V15 only** (do not install on V16). The install guide covers a full flash backup and the way back.
+    * **Status:** Stable (v1.1.3), tested on a real FM-1 (October 2026).
+
 ### 1.2. Modular Firmware Platforms & Builders
 
 
