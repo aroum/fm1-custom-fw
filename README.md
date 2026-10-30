@@ -487,6 +487,17 @@ Firmwares built upon or directly forked from the foundational open-source multi-
       * **Prehistoric Sound Library & TRIBE Drums:** 119 original sounds across Analog, Voice, Wheel, Phys, Trio, and Lofi engines; custom synthesized prehistoric percussion kit (BOOM, SKIN, CLAP, SEEDS, RATTL, LOG, BONE, ROCK) and environmental samples (storm, lithophone, jungle ambience).
       * **USB Second-Screen Companion:** Web-based display companion over USB-C translating MIDI and video render slices to mirror and control the synthesizer screen on an external smartphone, tablet, or cyberdeck monitor.
 
+70. **[BB1 by Texas Radio & The Big Beat](https://github.com/TexasRADIO/bb1-firmware) ([Web Installer](https://thebigbeat.app/fm1/install/) | [Web Emulator](https://thebigbeat.app/fm1/emulator/) | [Guide](https://thebigbeat.app/fm1/guide/)):**
+    * **License:** Open Source (GPL-3.0-only). Felucca-family firmware.
+    * **Polyphony & Engines:** Two independent drum machines (KIT A + KIT B) running simultaneously: a live-synthesised 808 plus seven sampled machines—LinnDrum, Linn LM-1, DrumTraks, DMX, Drumulator, Simmons and Rhythm King. **Dillo** is a monophonic bass synth with nine presets, including Square Acid; a shared three-head tape echo and spring reverb. Drum B renders on the FM-1's second core.
+    * **Concept:** A two-beat rhythm machine: stack two drum machines from different eras and let the bass ride on top.
+    * **Features:**
+      * **Library (BB1 1.5):** 67 songs / 233 song sections, 21 eras / 168 sections, 138 classic preset rhythms from four vintage rhythm boxes, and 205 ACID phrases in 27 Dillo banks.
+      * **On the beat:** kit and pattern changes queue for the next bar, with the screen showing NEXT until they land.
+      * **Performance:** REC + FX dub throw, live tempo/swing/A-B balance/transpose, and four knobs that always follow the screen.
+      * **Install:** one-click browser installer handles firmware and the separate sound library over USB-MIDI, checking the existing sounds before writing. Official-firmware return uses M-VAVE's updater; keep backups and follow the guide.
+      * **Browser player:** the released BB1 engine and all eight machines in the browser. The guide documents known limits, including the first tempo-edit jump; browser checks do not establish hardware timing.
+
 #### 1.1.2. SLOOP Ecosystem (Groovebox Core & Derived Firmwares)
 
 Firmwares centered around the **SLOOP** 4-track live groovebox workflow and its DX7/sampling expansion forks:
