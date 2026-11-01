@@ -695,6 +695,19 @@ Firmwares centered around the **SLOOP** 4-track live groovebox workflow and its 
      * **License:** Open Source (GPL-3.0). Sibling of MYCELIUM.
      * **Concept:** Interactive performance firmware designed for the Novation Launchpad Pro MK3, featuring playable synth sounds, interactive LED lightshows, and a browser companion.
 
+32. **[KARMA by eatyourgreensstudio-dotcom](https://github.com/eatyourgreensstudio-dotcom/karma-fm1) ([Website](https://eatyourgreensstudio-dotcom.github.io/karma-fm1/) | [Web Installer](https://eatyourgreensstudio-dotcom.github.io/karma-fm1/webapp/installer/) | [Web Editor](https://eatyourgreensstudio-dotcom.github.io/karma-fm1/webapp/editor/) | [Web Simulator](https://eatyourgreensstudio-dotcom.github.io/karma-fm1/emu/) | [Demo Video](https://youtu.be/lbAX7OYpN2o)):**
+     * **License:** Open Source (GPL-3.0-only). Built upon SLOOP 2.6 (isod89) and Felucca (Hügelton Instruments), with code from X0X, FM-106, Melodee, JIANT FM and Mutable Instruments' open-source modules.
+     * **Polyphony:** 8-voice budget shared across the 3 synth tracks, plus a dedicated drum track, with dual-core audio rendering.
+     * **Concept:** Four-track groovebox built for playing live and for recording into a DAW: one USB cable carries six separate audio stems, the MIDI of every track, and the DAW's clock, transport and song position.
+     * **Features:**
+       * **Four Tracks:** Track 1 is an acid bass or a Juno-style polysynth; Track 2 is physical modelling built on Mutable Instruments' Elements (strike, pluck, bow or blow a modal resonator); Track 3 runs the synthesis models of Mutable Instruments' Plaits; the drum track uses the drum voices of Erica Synths' open-source LXR-02 firmware, ported, with their own kits.
+       * **Sequencer & Song Mode:** 64 steps per track with chords of up to 4 notes, ratchets, accents, slides, chance, fills and parameter locks; song mode with sections A–D in any order, live section chains and song recording.
+       * **Generators:** Write every synth part on one key and chord progression, evolving as they play.
+       * **USB & DAW:** Class-compliant "FM-1 KARMA" audio interface and MIDI device (no driver); STEMS mode streams six channels (each track plus the effects); MIDI out of the sequencer per track; follows the DAW's clock, play button and song position (tested with Ableton Live).
+       * **Effects:** Granular send built on Mutable Instruments' Clouds, reverb, delay and punch-in performance FX.
+       * **Visuals:** A pixel-art character per track that reacts to the notes, and a reel-to-reel tape visualiser.
+       * **Web Tools:** Browser simulator running the real firmware, a web editor for sounds, songs and backups, and an installer that also returns the FM-1 to M-VAVE's official V15 or V16.
+
 #### 1.1.3. FoMni Family (Strumplate & Chord Instruments)
 
 Suzuki Omnichord and Japanese Shigin accompaniment instruments featuring strumplate and chord-shaping workflows:
