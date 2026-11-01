@@ -207,6 +207,8 @@ To open the physical enclosure of the M-VAVE FM1:
 * **Teardown & Internal PCB Photos:**
   * High-resolution disassembly photos of the PCB and internal components are available locally in the [photos/](photos/) directory.
   * Teardown photo discussion and community analysis can also be viewed on [Reddit r/synthdiy](https://www.reddit.com/r/synthdiy/comments/1vgotwe/comment/p3gk1ko/).
+  * Detailed macro view of the PCB traces directly underneath the MCU package: [Reddit r/MVaveFM1: Clear view of PCB traces under the MCU](https://www.reddit.com/r/MVaveFM1/comments/1xkfhyj/clear_view_of_pcb_traces_under_the_mcu/).
+  * External hardware unbricking using an RP2040-Zero controller: [Reddit r/MVaveFM1: Unbrick guide with RP2040-Zero for dummies](https://www.reddit.com/r/MVaveFM1/comments/1xkg5if/unbrick_guide_with_rp2040zero_for_dummies/).
 
 ---
 
