@@ -117,6 +117,7 @@ The FM-1 does **not** feature an external 8-pin SOIC Flash chip on the PCB. Inst
 * **Pin 37 (`PD5`):** SPI NOR Flash Data Out (`DO` / MOSI — `SPI0_DOA` / `SFC_DOA`).
 * **Pin 38 (`PD4`):** SPI NOR Flash Clock (`CLK` — `SPI0_CLKA` / `SFC_CLKA`).
 * **Pin 39 (`PD6`):** SPI NOR Flash Power Gate (`SFGAT` / Flash power control).
+  * **Hardware MIDI Out Mod (HarvieCZ):** Pin 39 can also be repurposed as a physical MIDI Output line (via bit-banging or peripheral routing with a simple two-resistor divider or 74HCT14 buffer), enabling the FM-1 to directly sequence external synthesizers without an external USB-MIDI host box.
 * **Pin 40 (`PD1`):** SPI NOR Flash Data In (`DI` / MISO — `SPI0_DIA` / `SFC_DIA`).
 * **Pin 41 (`PD0`):** SPI NOR Flash Chip Select (`CS` — `SPI0_CSA` / `SFC_CSA`).
 

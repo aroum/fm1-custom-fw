@@ -426,6 +426,7 @@ Useful open-source tools, documentation, and SDK repositories:
 | 33 | **fm1-midi-converter by balancechiang**<br>[GitHub](https://github.com/balancechiang/fm1-midi-converter)<br>**License:** Open Source. | **Concept:** Single-page offline Web MIDI project converter that translates and parses sequence arrangements between standard Standard MIDI Files (`.mid`) and FM-1 project data structures. |
 | 34 | **mwave-fm1-linux-vst by SpeakingColors**<br>[GitHub](https://github.com/SpeakingColors/mwave-fm1-linux-vst)<br>**License:** Open Source. | **Concept:** Native Linux VST controller plugin providing live parameter automation, patch librarianship, and bidirectional MIDI communication with physical FM-1 hardware. |
 | 35 | **Jexed (JSFX Port of Dexed)**<br>[Project Link](https://www.reddit.com/r/MVaveFM1/comments/1xgre3k/jexed_a_jsfx_port_of_dexed/) | **Platform:** Cockos REAPER JSFX script / instrument plugin.<br>**Concept:** Modern JSFX port of the Dexed Yamaha DX7 synthesizer engine for Cockos REAPER, featuring a modernized UI, clear functional visualizations of 8-stage rate and level envelope behaviors, and built-in preset collections for sound design. |
+| 36 | **Chromium-based Music & Sampler Browser**<br>[Project Link](https://www.reddit.com/r/MVaveFM1/comments/1xlejfp/im_vibecoding_a_chromiumbased_browser_and_decided/) | AI-assisted ("vibecoded") Chromium-based desktop browser environment featuring integrated direct audio sampling tools, YouTube audio/video capture, and WebMIDI hardware controller mapping tailored for portable music-making workflows and web-based synthesizer editors. |
 
 ### 3.6. Developer Frameworks, UI Designers & Curated Collections
 
@@ -508,6 +509,10 @@ Community hardware companion projects and accessories:
 6. **[Display SPI Bus MicroSD Card Mod by mobiliakas1](https://www.reddit.com/r/MVaveFM1/comments/1xhiryu/loading_firmware_from_sd_card/):**
    * **Concept:** Hardware modification tapping directly into the AC7911B's hardware SPI1 display bus (`PC10` MOSI, `PC9` SCK) with an inverted chip-select line (`/CS`) to interface a microSD card reader without requiring free dedicated microcontroller pins.
    * **Applications:** Allows loading and swapping `.fwsc` firmware binaries on the go directly from a memory card without computer connection, opening future architectural possibilities for streaming offline sample banks and sound libraries into device RAM.
+
+7. **[Harvie's MIDI Output Mod for DAWless FM-1 by HarvieCZ](https://www.reddit.com/r/MVaveFM1/comments/1xlhsue/harvies_midi_output_mod_for_dawless_mvave_fm1/):**
+   * **Concept:** Direct hardware modification adding a physical DIN / TRS MIDI output to the FM-1 without requiring external USB-MIDI host boxes. Uses pin 39 on the microcontroller package (bit-banged serial TX or redirected UART) with a simple two-resistor voltage divider / current-limiting circuit (optionally buffered via 74HCT14 / 74LVC14).
+   * **Applications:** Allows the FM-1 to directly sequence and drive external hardware synthesizers, drum machines, and grooveboxes in a compact, battery-powered DAWless live rig without relying on a computer or powered USB host.
 
 ### 5.1. 3D-Printed Accessories, Enclosures & Desktop Mounts
 
