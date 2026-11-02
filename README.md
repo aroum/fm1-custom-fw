@@ -484,9 +484,9 @@ Comprehensive technical references and community guides:
 
 ---
 
-## 5. Hardware Add-ons & DIY Enhancements
+## 5. Hardware Mods, Add-ons & DIY Enhancements
 
-Community hardware companion projects and accessories:
+Community hardware modifications, companion projects, and accessories:
 
 1. **[FM-1 Bonus Box by pfkellogg](https://github.com/pfkellogg/fm1-bonus-box):**
    ESP32-S3 external companion module featuring a rotary preset browser with round color TFT, sustain pedal input, Wi-Fi bank manager, USB-MIDI host, and a sing-on-pitch voice trainer.
@@ -513,22 +513,6 @@ Community hardware companion projects and accessories:
 7. **[Harvie's MIDI Output Mod for DAWless FM-1 by HarvieCZ](https://www.reddit.com/r/MVaveFM1/comments/1xlhsue/harvies_midi_output_mod_for_dawless_mvave_fm1/):**
    * **Concept:** Direct hardware modification adding a physical DIN / TRS MIDI output to the FM-1 without requiring external USB-MIDI host boxes. Uses pin 39 on the microcontroller package (bit-banged serial TX or redirected UART) with a simple two-resistor voltage divider / current-limiting circuit (optionally buffered via 74HCT14 / 74LVC14).
    * **Applications:** Allows the FM-1 to directly sequence and drive external hardware synthesizers, drum machines, and grooveboxes in a compact, battery-powered DAWless live rig without relying on a computer or powered USB host.
-
-### 5.1. 3D-Printed Accessories, Enclosures & Desktop Mounts
-
-
-3D-printable cases, faceplates, and stands designed specifically for the FM-1 form factor:
-
-1. **[M-VAVE FM-1 Protective Snap Case (Printables #1819065)](https://www.printables.com/model/1819065-m-vave-fm-1-case):**
-   Form-fitting travel case and protective shell designed for the M-VAVE FM-1 pocket synthesizer, keeping rotary encoders and capacitive keys safe in bags.
-2. **[M-VAVE / Cuvave FM-1 Synth Stand 18° Desk Mount (MakerWorld #3487782)](https://makerworld.com/ru/models/3487782-m-vave-cuvave-fm-1-synth-stand-18deg-desk-mount):**
-   Ergonomic 18-degree tilted desktop stand providing optimal viewing angles for the 240 × 240 screen and comfortable finger access to the capacitive keyboard and rotary knobs.
-3. **[M-VAVE FM-1 3D CAD Chassis Reference Model by Zande Creates](https://grabcad.com/library/m-vave-fm-1-1):**
-   High-precision dimensional CAD model (accurate to ~0.1 mm) for modeling custom faceplates, cases, desktop angled stands, and hardware attachments.
-4. **[M-Vave FM-1 Comfort Grip/Handle - 34g/70 minutes](https://makerworld.com/en/models/3490222-m-vave-fm-1-comfort-grip-handle-34g-70-minutes)**
-   Ergonomic, game controller-style grip, tight snap-fit thanks to Zande Creates's CAD model (5.1.3 above). Good for noodling on the couch or using game emulators.
-5. **[Triple-Screen Cyberdeck Folding Laptop Enclosure by fantasmoslam](https://www.reddit.com/r/MVaveFM1/comments/1xgp82y/triple_screen_cyberdeck_fm1_running_ny_custom/):**
-   Cassette-futurism folding laptop enclosure holding an M-VAVE FM-1 alongside an external smartphone (Galaxy S22 Ultra / Pixel 5) as a secondary display running Paleotone's USB second-screen companion app.
 
 ---
 

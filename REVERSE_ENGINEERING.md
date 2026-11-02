@@ -418,3 +418,23 @@ With the rise of custom community firmwares, community discussions have raised v
   * Only flash firmware built from public, verifiable open-source repositories with clean revision histories.
   * Audit build actions, releases, and source diffs before flashing unknown binaries.
   * On sensitive host workstations, connect experimental USB devices through isolated USB hubs, dedicated non-privileged test machines, or VMs with USB passthrough controls.
+
+---
+
+## 11. 3D-Printed Accessories, Enclosures & Hardware CAD Models
+
+3D-printable cases, faceplates, chassis CAD reference models, and ergonomic stands designed specifically for the FM-1 form factor:
+
+1. **[M-VAVE FM-1 Protective Snap Case (Printables #1819065)](https://www.printables.com/model/1819065-m-vave-fm-1-case):**
+   Form-fitting travel case and protective shell designed for the M-VAVE FM-1 pocket synthesizer, keeping rotary encoders and capacitive keys safe in bags.
+2. **[M-VAVE / Cuvave FM-1 Synth Stand 18° Desk Mount (MakerWorld #3487782)](https://makerworld.com/ru/models/3487782-m-vave-cuvave-fm-1-synth-stand-18deg-desk-mount):**
+   Ergonomic 18-degree tilted desktop stand providing optimal viewing angles for the 240 × 240 screen and comfortable finger access to the capacitive keyboard and rotary knobs.
+3. **[M-VAVE FM-1 3D CAD Chassis Reference Model by Zande Creates](https://grabcad.com/library/m-vave-fm-1-1):**
+   High-precision dimensional CAD model (accurate to ~0.1 mm) for modeling custom faceplates, cases, desktop angled stands, and hardware attachments.
+4. **[M-Vave FM-1 Comfort Grip/Handle - 34g/70 minutes](https://makerworld.com/en/models/3490222-m-vave-fm-1-comfort-grip-handle-34g-70-minutes):**
+   Ergonomic, game controller-style grip, tight snap-fit thanks to Zande Creates's CAD model. Good for noodling on the couch or using game emulators.
+5. **[Triple-Screen Cyberdeck Folding Laptop Enclosure by fantasmoslam](https://www.reddit.com/r/MVaveFM1/comments/1xgp82y/triple_screen_cyberdeck_fm1_running_ny_custom/):**
+   Cassette-futurism folding laptop enclosure holding an M-VAVE FM-1 alongside an external smartphone (Galaxy S22 Ultra / Pixel 5) as a secondary display running Paleotone's USB second-screen companion app.
+6. **[Retro Console Stand for FM-1 and Scale Synth](https://www.reddit.com/r/MVaveFM1/comments/1xjgw3p/update_retro_console_stand_for_fm1_and_scale/):**
+   Custom 3D-printed desktop retro console stand dock designed to hold the M-VAVE FM-1 alongside complementary compact grooveboxes and scale synthesizers.
+
