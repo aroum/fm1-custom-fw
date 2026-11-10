@@ -2,3 +2,4 @@
 .venv/
 *.app/
 *.app
+.agents/skills/fm1-resource-workflow/
