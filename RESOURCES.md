@@ -193,6 +193,8 @@ Comprehensive technical references and community guides:
    Practical operational notes covering sequencer workflows, the V15 reverb bugfix, and Linux flashing procedures.
 4. **[FM-1 on Tao of Mac (by Rui Carmo)](https://taoofmac.com/space/com/m-vave/fm-1):**
    Architectural notes, teardown observations, and hackability insights.
+5. **[Program SLX (by Tobia Marconi)](https://programslx.app/) ([Try without an account](https://programslx.app/try)):**
+   Free web app of short creative exercises played on the FM-1, built on SLOOP, sloopDX, Felucca and other community firmware, each credited. 100 Patterns in English, Italian and French. Closed source.
 
 ---
 
