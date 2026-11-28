@@ -12,7 +12,7 @@ A curated directory and reference hub for the **M-VAVE FM1** synthesizer (powere
 >
 > * **[M-VAVE SMK-37 Custom Firmware Hub](https://genkigenki.github.io/smk37/):** Directory and browser-based installer for SMK-37 firmwares and FM-1 ports.
 > * **[fm1-to-smk37 Port Kit by genkigenki](https://github.com/genkigenki/fm1-to-smk37):** Board port patches and documentation for adapting FM-1 firmwares to SMK-37 hardware.
-> * **[BB-37 Telegram 101 by Big Beat Studio](https://github.com/TexasRADIO/smk37-elite-firmware):** A 101 lead, Dillo acid bass, synthesized 808 drums, Band arrangements and one-bar knob-motion recording on SMK-37 Elite, Pro and MKE-P37. Build 851; Elite also includes 727 and LATIN percussion. [Model-selecting browser installer](https://thebigbeat.app/elite/telegram-101/install/). GPL-3.0-only.
+> * **[BB-37 Telegram 101 by Big Beat Studio](https://github.com/TexasRADIO/smk37-elite-firmware):** A 101 lead, Dillo acid bass, synthesized 808 drums, Band arrangements and one-bar knob-motion recording on SMK-37 Elite, Pro and MKE-P37. Tap BT and a pad to switch instruments. On Elite, Band also cues 727 and LATIN percussion on the next downbeat. [Model-selecting browser installer](https://thebigbeat.app/elite/telegram-101/install/). GPL-3.0-only. [Current release](https://github.com/TexasRADIO/smk37-elite-firmware/releases/latest).
 
 ---
 
