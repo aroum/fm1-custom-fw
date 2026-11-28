@@ -1,0 +1,36 @@
+name: PR Auto-Labeler
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply short labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.pull_request.body || '';
+            const labels = new Set();
+
+            if (/- \[x\] Add new entry/i.test(body)) labels.add('add');
+            if (/- \[x\] Fix \/ update/i.test(body)) labels.add('fix');
+            if (/- \[x\] `README\.md`/i.test(body)) labels.add('fw');
+            if (/- \[x\] `RESOURCES\.md`/i.test(body)) labels.add('tools');
+            if (/- \[x\] `HARDWARE_MODS\.md`/i.test(body)) labels.add('hw');
+            if (/- \[x\] `OFFICIAL_FIRMWARE\.md`/i.test(body)) labels.add('stock');
+            if (/- \[x\] `REVERSE_ENGINEERING\.md`/i.test(body)) labels.add('re');
+
+            if (labels.size > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: Array.from(labels)
+              });
+            }
